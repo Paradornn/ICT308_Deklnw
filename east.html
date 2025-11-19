@@ -1,0 +1,867 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>DekInw</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/region.css">
+    </head> 
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/18/22/46/deer-8325201_640.png" alt="" width="60" height="60" class="d-inline-block alert-text-top">DekInw
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><i class="fas fa-home"></i> หน้าแรก</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-map-marked-alt"></i> ภูมิภาค
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="north.html"><i class="fas fa-mountain"></i> ภาคเหนือ</a></li>
+                                <li><a class="dropdown-item" href="ภาคตะวันออกเฉียงเหนือ.html"><i class="fas fa-tree"></i> ภาคตะวันออกเฉียงเหนือ</a></li>
+                                <li><a class="dropdown-item" href="central.html"><i class="fas fa-water"></i> ภาคกลาง</a></li>
+                                <li><a class="dropdown-item" href="east.html"><i class="fas fa-sun"></i> ภาคตะวันออก</a></li>
+                                <li><a class="dropdown-item" href="south.html"><i class="fas fa-umbrella-beach"></i> ภาคใต้</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.html"><i class="fas fa-hand-holding-heart"></i> บริจาค</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fas fa-envelope"></i> ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       </div>
+       <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#myslider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="2"></button>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-13 active">
+                    <div class="container">
+                        <div class="carousel-caption" data-aos="fade-up">
+                            <h3><i class="fas fa-water"></i> ภาคตะวันออก</h3>
+                            <p>สัตว์ป่าที่หลากหลายตามป่าเขาและชายฝั่งทะเล</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="carousel-item carousel-image-14">
+                <div class="container">
+                    <div class="carousel-caption" data-aos="fade-up">
+                        <h3><i class="fas fa-fish"></i> ความหลากหลายทางทะเล</h3>
+                        <p>สัตว์น้ำและสัตว์ทะเลที่น่าทึ่ง</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item carousel-image-15">
+                <div class="container"> 
+                    <div class="carousel-caption" data-aos="fade-up">
+                        <h3><i class="fas fa-tree"></i> ป่าดิบชื้น</h3>
+                        <p>ระบบนิเวศที่อุดมสมบูรณ์</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#myslider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#myslider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+          <div class="section-header">
+            <h2><i class="fas fa-paw"></i> ภาคตะวันออก</h2>
+            <p class="lead">ภาคตะวันออกของประเทศไทยเป็นภูมิภาคที่มีทั้งพื้นที่ป่าเขาและชายฝั่งทะเล จึงมีลักษณะภูมิประเทศที่หลากหลาย ทั้งภูเขาสูงสลับที่ราบ เนินเขา ป่าดิบชื้น ป่าเบญจพรรณ และป่าชายเลนบริเวณชายฝั่งทะเลอ่าวไทย อากาศค่อนข้างร้อนชื้นและมีฝนตกสม่ำเสมอ ทำให้ธรรมชาติยังคงความอุดมสมบูรณ์ และเหมาะสำหรับการเจริญเติบโตของพืชพันธุ์ต่าง ๆ ภาคตะวันออกยังมีแหล่งทรัพยากรน้ำที่สำคัญ เช่น ลำน้ำธรรมชาติ อ่างเก็บน้ำ และน้ำตก ทำให้ระบบนิเวศในพื้นที่มีความหลากหลายสูง ทั้งสัตว์ป่าที่อาศัยในป่าเขา สัตว์น้ำในแม่น้ำลำคลอง รวมถึงสัตว์ทะเลที่พบตามแนวชายฝั่งและเกาะต่าง ๆ นอกจากนี้ยังมีสัตว์หายากและสัตว์ป่าที่ต้องได้รับการคุ้มครอง ทำให้ภูมิภาคนี้เป็นอีกพื้นที่หนึ่งที่ควรได้รับการอนุรักษ์เพื่อความสมดุลของธรรมชาติและสิ่งแวดล้อม</p>
+          </div>
+          <div class="row">
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/133737161/900" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-dove"></i> นกอีโก้ง</h5>
+                  <p class="text-muted flex-grow-1">นกน้ำหัวดำคอขาว ปากแดง ขนสีน้ำเงินเข้ม กินสัตว์น้ำเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal1">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/142979891/1200" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-crow"></i> นกอีแจ้</h5>
+                  <p class="text-muted flex-grow-1">นกป่าปีกน้ำเงินสด ลำตัวน้ำตาล ท้องแดง กินแมลงและปลวก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal2">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://www.kasetsanjorn.com/wp-content/uploads/2022/11/2.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-fish"></i> ปลาบู่</h5>
+                  <p class="text-muted flex-grow-1">ปลาน้ำกร่อยกระโดดบนโคลนได้ หายใจได้ทั้งในน้ำและบนบก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal3">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://img.kapook.com/u/2018/Jarosphan/Pet/Etc/3520/01.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-otter"></i> กระรอกบิน</h5>
+                  <p class="text-muted flex-grow-1">สัตว์กลางคืนร่อนข้ามต้นไม้ได้ ด้วยพังผืดระหว่างขา</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal4">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh39CzXlqQVmh1UTBQHQNAVkVEk1NJ7sFrAA&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-paw"></i> ชะนีมงกุฎ</h5>
+                  <p class="text-muted flex-grow-1">ไพรเมตใกล้สูญพันธุ์มีมงกุฎขาว กินผลไม้กระจายเมล็ดพันธุ์</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal5">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Brydeswhale_sophiewebb-swfsc-star2006.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-water"></i> วาฬบรูด้า</h5>
+                  <p class="text-muted flex-grow-1">วาฬขนาดกลางลำตัวสีเทาเข้ม กรองกินปลาและแพลงก์ตอน</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal6">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://d3dyak49qszsk5.cloudfront.net/female_diver_water_with_whale_sharks_rhincodon_typus_1_6743119bbc.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-fish"></i> ปลาฉลามวาฬ</h5>
+                  <p class="text-muted flex-grow-1">ปลาที่ใหญ่ที่สุดในโลกลายจุดขาว ไม่ดุร้ายต่อคน</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal7">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfw7q4osmox_93SxQUb2kFrWWq04MVNJSQg&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-kiwi-bird"></i> นกกระสาคอขาว</h5>
+                  <p class="text-muted flex-grow-1">นกน้ำลำตัวดำคอขาวฟู กินปลากบสัตว์น้ำเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal8">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://f.ptcdn.info/619/024/000/1413624086-manat-o.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-hippo"></i> พะยูน</h5>
+                  <p class="text-muted flex-grow-1">สัตว์ทะเลหางเป็นใบพัด กินหญ้าทะเล ใกล้สูญพันธุ์</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal9">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9QbKsmUX_EXUzhurIO8OrB5ajnKASfrPxUQ&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-frog"></i> กบอ่อง</h5>
+                  <p class="text-muted flex-grow-1">กบนาผิวหยาบสีเขียวแกมน้ำตาล กินแมลงและหนอน</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal10">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://www.zoothailand.org/ewtadmin/ewt/korat_th/images/waterdragonfemale.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-dragon"></i> ตะกอง</h5>
+                  <p class="text-muted flex-grow-1">กิ้งก่ายักษ์สีเขียวสดมีหงอน ว่ายน้ำเก่ง กินแมลงและสัตว์เล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal11">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Irrawaddy_dolphin-Orcaella_brevirostris_by_2eight.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-water"></i> โลมาอิรวดี</h5>
+                  <p class="text-muted flex-grow-1">โลมาหัวกลมไม่มีจะงอย สินในน้ำกร่อย ใกล้สูญพันธุ์</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal12">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://phuketaquarium.org/wp-content/uploads/2021/09/%E0%B9%81%E0%B8%A1%E0%B8%87%E0%B8%81%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B8%B8%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%88%E0%B8%B8%E0%B8%94.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-circle-notch"></i> แมงกะพรุน</h5>
+                  <p class="text-muted flex-grow-1">สัตว์ทะเลร่างกายคล้ายร่มวุ้น ล่าแพลงก์ตอนและลูกปลา</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal13">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIa-T7fdP9JYnXdFdaY01ma8JaxTbmhaYnA&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-frog"></i> เขียดจะนา</h5>
+                  <p class="text-muted flex-grow-1">สัตว์ครึ่งบกครึ่งน้ำสีน้ำตาลเส้นขาว กินแมลงศัตรูพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal14">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5KTPTitEBDbYl1HyfAOa3hryecEulDGx2qWGGGX22lYss890a7Es.webp" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-lizard"></i> จิ้งเหลน</h5>
+                  <p class="text-muted flex-grow-1">สัตว์เลื้อยคลานผิวเรียบมัน กินแมลงและหนอน</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal15">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKe3RnTwE4KSyb_hDTWDDsbKoOR14mc1CIBA&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-fish"></i> ฉลามครีบดำ</h5>
+                  <p class="text-muted flex-grow-1">ฉลามขนาดกลางปลายครีบมีจุดดำ มักไม่ดุร้ายต่อคน</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal16">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://khaokheow.zoothailand.org/zoo_office/fileupload/encyclopedia_file/78.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-paw"></i> หมีขอ</h5>
+                  <p class="text-muted flex-grow-1">สัตว์มีหางยาวใช้จับยึดได้ อาศัยบนต้นไม้ ช่วยกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal17">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjqUG_eNcHPJluhB9Zon7R71UaVfnx6GZkQ&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-cat"></i> เสือปลา</h5>
+                  <p class="text-muted flex-grow-1">แมวป่ามีลายจุดดำ เท้ามีพังผืดช่วยว่ายน้ำเก่ง</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal18">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVLpM2uHx5gaA-6bJh8nwYfDbf-5VPTOa7w&s" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-disease"></i> งูทางมะพร้าว</h5>
+                  <p class="text-muted flex-grow-1">งูไม่มีพิษขนาดใหญ่ กินหนูช่วยควบคุมศัตรูพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal19">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://suthiratfoundation.or.th/uploads/images/20230320092538-517071795.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-cow"></i> วัวแดง</h5>
+                  <p class="text-muted flex-grow-1">วัวป่าขนาดใหญ่มีถุงเท้าขาว เป็นสัตว์ป่าสงวนใกล้สูญพันธุ์</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#eastAnimal20">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    <!-- Modal สำหรับนกอีโก้ง --><
+    <div class="modal fade" id="eastAnimal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-dove"></i> นกอีโก้ง</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/133737161/900" class="img-fluid mb-3" alt="นกอีโก้ง">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>นกอีโก้งเป็นนกน้ำขนาดกลาง มีลักษณะเด่นคือหัวดำคอขาว ปากสีแดงสด และขนสีน้ำเงินเข้ม ลำตัวยาวประมาณ 25-28 เซนติเมตร นกชนิดนี้อาศัยตามป่าชายเลนและลำคลองในภาคตะวันออก มีพฤติกรรมการบินต่ำเหนือผิวน้ำค้นหาเหยื่อ</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>นกอีโก้งกินอาหารเป็นปลาเล็ก กุ้ง และสัตว์น้ำเล็ก มีทักษะในการดำน้ำล่าเหยื่ออย่างชำนาญ มักพบว่าอาศัยอยู่เป็นคู่หรือกลุ่มเล็ก ทำรังบนต้นไม้เหนือน้ำ เพื่อป้องกันผู้ล่า</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>ปัจจุบันนกอีโก้งอยู่ในสถานะปกติ แต่ถิ่นอาศัยที่เป็นป่าชายเลนกำลังลดลง จึงต้องการการอนุรักษ์พื้นที่ชายฝั่งทะเล</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับนกอีแจ้ -->
+    <div class="modal fade" id="eastAnimal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-crow"></i> นกอีแจ้</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/142979891/1200" class="img-fluid mb-3" alt="นกอีแจ้">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>นกอีแจ้เป็นนกป่าขนาดกลาง มีสีสันสวยงามโดดเด่นด้วยปีกสีน้ำเงินสด ลำตัวสีน้ำตาลอมเขียว และท้องสีแดงสด ขนาดลำตัวประมาณ 25-30 เซนติเมตร พบในป่าดิบชื้นและป่ารกร้างทางภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>นกชนิดนี้กินแมลงและปลวกเป็นอาหารหลัก มักพบหากินบนพื้นดินใต้ร่มไม้ ตีเสียงเพื่อสื่อสารกับฝูง มีพฤติกรรมขี้อาย ไม่ค่อยพบเห็นได้ง่าย</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ แต่ป่าที่อาศัยอยู่กำลังถูกทำลาย ต้องการการอนุรักษ์ป่าดิบชื้นเพื่อคงความหลากหลาย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับปลาบู่ -->
+    <div class="modal fade" id="eastAnimal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-fish"></i> ปลาบู่</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://www.kasetsanjorn.com/wp-content/uploads/2022/11/2.jpg" class="img-fluid mb-3" alt="ปลาบู่">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>ปลาบู่เป็นปลาน้ำกร่อยที่มีความสามารถครึ่งบกครึ่งน้ำ สามารถหายใจออกซิเจนจากอากาศได้ ลำตัวยาวกลมสีน้ำตาล พบในป่าชายเลนและโคลนชายฝั่งทะเลภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>ปลาบู่สามารถกระโดดบนโคลนได้เป็นระยะทางสั้น ๆ และมีพฤติกรรมขุดโพรงในโคลนเพื่ออาศัย กินแมลงและสัตว์หน้าดินเล็ก ๆ เป็นอาหาร เป็นปลาที่มีคุณค่าทางโภชนาการสูง</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>ปลาบู่เป็นปลาเศรษฐกิจสำคัญของชุมชนชายฝั่ง การอนุรักษ์ป่าชายเลนจะช่วยรักษาแหล่งเพาะพันธุ์ของปลาชนิดนี้</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับกระรอกบิน -->
+    <div class="modal fade" id="eastAnimal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-otter"></i> กระรอกบิน</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.kapook.com/u/2018/Jarosphan/Pet/Etc/3520/01.jpg" class="img-fluid mb-3" alt="กระรอกบิน">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>กระรอกบินเป็นสัตว์เลี้ยงลูกด้วยนมกลางคืนขนาดเล็ก มีแผ่นหนังบางระหว่างขาหน้าและขาหลังที่ช่วยให้ร่อนจากต้นไม้ได้ไกลถึง 50 เมตร ขนสีเทาอมน้ำตาลนุ่มสวยงาม หางฟูยาว</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>กระรอกบินออกหากินเวลากลางคืน กินผลไม้ เมล็ดพืช และเปลือกไม้อ่อนเป็นอาหาร มีพฤติกรรมสะสมอาหารไว้ในโพรงต้นไม้ ตื่นตัวมากเมื่อพบอันตราย</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ แต่การตัดไม้ทำลายป่าส่งผลต่อถิ่นอาศัย ต้องการการอนุรักษ์ป่าต้นน้ำเพื่อรักษาความหลากหลาย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับชะนีมงกุฎ -->
+    <div class="modal fade" id="eastAnimal5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-paw"></i> ชะนีมงกุฎ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh39CzXlqQVmh1UTBQHQNAVkVEk1NJ7sFrAA&s" class="img-fluid mb-3" alt="ชะนีมงกุฎ">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>ชะนีมงกุฎเป็นไพรเมตใกล้สูญพันธุ์ ตัวผู้มีสีดำมีมงกุฎขนขาวโดดเด่นรอบหน้า ตัวเมียมีสีอ่อนกว่า ขนาดลำตัวประมาณ 40-50 เซนติเมตร อาศัยบนต้นไม้สูงในป่าดิบชื้นภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>กินผลไม้เป็นหลัก มีบทบาทสำคัญในการกระจายเมล็ดพันธุ์ในระบบนิเวศป่า อาศัยอยู่เป็นกลุ่มประมาณ 3-6 ตัว มีพฤติกรรมสังคมที่ซับซ้อน</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ เนื่องจากการล่าและการทำลายป่า ได้รับการคุ้มครองตามกฎหมายสัตว์ป่าสงวน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับวาฬบรูด้า -->
+    <div class="modal fade" id="eastAnimal6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-water"></i> วาฬบรูด้า</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Brydeswhale_sophiewebb-swfsc-star2006.jpg" class="img-fluid mb-3" alt="วาฬบรูด้า">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>วาฬบรูด้าเป็นสัตว์เลี้ยงลูกด้วยนมในทะเลขนาดกลาง ลำตัวยาวสีเทาเข้มประมาณ 12-15 เมตร น้ำหนักประมาณ 20-25 ตัน พบในอ่าวไทยฝั่งตะวันออกและน่านน้ำเปิด</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>วาฬบรูด้ากินอาหารโดยการกรองปลาเล็กและแพลงก์ตอนสัตว์ขนาดเล็ก มักพบว่าอาศัยอยู่เป็นคู่หรือกลุ่มเล็ก มีพฤติกรรมว่ายเร็วและดำน้ำลึกได้ถึง 300 เมตร</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>ถูกคุกคามจากอวนปลา มลพิษทางทะเล และเรือประมง ต้องการการอนุรักษ์แหล่งทะเลและการบังคับใช้กฎหมาย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับปลาฉลามวาฬ -->
+    <div class="modal fade" id="eastAnimal7" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-fish"></i> ปลาฉลามวาฬ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://d3dyak49qszsk5.cloudfront.net/female_diver_water_with_whale_sharks_rhincodon_typus_1_6743119bbc.jpg" class="img-fluid mb-3" alt="ปลาฉลามวาฬ">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>ปลาฉลามวาฬเป็นปลาที่ใหญ่ที่สุดในโลก ยาวได้ถึง 12 เมตร ผิวสีเข้มมีลายจุดขาวโดดเด่น มีปากกว้างใหญ่ใช้กรองกินอาหาร พบในทะเลเขตร้อนรวมถึงอ่าวไทยฝั่งตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>กรองกินแพลงก์ตอนและปลาเล็ก ว่ายเร็วมาก แต่ไม่ดุร้ายต่อคน มักพบว่าว่ายเล่นกับนักดำน้ำ มีพฤติกรรมอพยพตามฤดูกาล</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ ถูกคุกคามจากการท่องเที่ยวไม่ยั่งยืน ต้องการการอนุรักษ์ทะเลและกฎระเบียบการท่องเที่ยว</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับนกกระสาคอขาว -->
+    <div class="modal fade" id="eastAnimal8" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-kiwi-bird"></i> นกกระสาคอขาว</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfw7q4osmox_93SxQUb2kFrWWq04MVNJSQg&s" class="img-fluid mb-3" alt="นกกระสาคอขาว">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>นกกระสาคอขาวเป็นนกน้ำขนาดใหญ่ ลำตัวดำมัน คอขาวฟูโดดเด่น ปากและขาสีแดง ขนาดสูงประมาณ 100-130 เซนติเมตร พบในพื้นที่ชุ่มน้ำและทุ่งนาภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>กินปลา กบ และสัตว์น้ำเล็ก มักสร้างรังบนต้นไม้โตเดี่ยว มีพฤติกรรมการบินสูงเพื่อลาดตระเวนหาอาหาร ทำรังเป็นโคโลนีขนาดใหญ่</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ เนื่องจากการทำลายพื้นที่ชุ่มน้ำ ต้องการการอนุรักษ์พื้นที่ทุ่งนาและบึง</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับพะยูน -->
+    <div class="modal fade" id="eastAnimal9" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-hippo"></i> พะยูน</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://f.ptcdn.info/619/024/000/1413624086-manat-o.jpg" class="img-fluid mb-3" alt="พะยูน">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>พะยูนเป็นสัตว์เลี้ยงลูกด้วยนมในทะเลขนาดใหญ่ รูปร่างอ้วนป้อมหางคล้ายใบพัด ผิวหนังเทาเรียบ ขนาดยาวประมาณ 3-4 เมตร น้ำหนัก 400-600 กิโลกรัม อาศัยในน้ำตื้นที่มีหญ้าทะเล</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>พะยูนกินหญ้าทะเลและสาหร่ายเป็นหลัก สามารถกินได้วันละ 30-40 กิโลกรัม มีพฤติกรรมว่ายช้าและสงบ มักพบอาศัยอยู่เป็นคู่หรือครอบครัวเล็ก</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ ถูกคุกคามจากใบพัดเรือ อวนปลา และมลพิษทางทะเล เป็นสัตว์ป่าสงวนแห่งชาติ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับกบอ่อง -->
+    <div class="modal fade" id="eastAnimal10" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-frog"></i> กบอ่อง</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9QbKsmUX_EXUzhurIO8OrB5ajnKASfrPxUQ&s" class="img-fluid mb-3" alt="กบอ่อง">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>กบอ่องหรือกบนาเป็นสัตว์ครึ่งบกครึ่งน้ำขนาดกลางถึงใหญ่ ผิวหยาบมีสันนูนตามหลัง สีเขียวแกมน้ำตาล ขนาดลำตัวประมาณ 8-12 เซนติเมตร พบทั่วไปในทุ่งนาและแหล่งน้ำนิ่งภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>กบอ่องกินแมลงและหนอนเป็นอาหาร ออกหากินเวลากลางคืน มีเสียงร้องดังช่วงฤดูฝน มีบทบาทสำคัญในการควบคุมประชากรแมลงศัตรูพืช</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ แต่ได้รับผลกระทบจากสารเคมีเกษตร ต้องการการใช้สารเคมีที่ปลอดภัยต่อสิ่งแวดล้อม</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับตะกอง -->
+    <div class="modal fade" id="eastAnimal11" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-dragon"></i> ตะกอง</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://www.zoothailand.org/ewtadmin/ewt/korat_th/images/waterdragonfemale.jpg" class="img-fluid mb-3" alt="ตะกอง">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>ตะกองหรือกิ้งก่ายักษ์เป็นสัตว์เลื้อยคลานขนาดใหญ่ ลำตัวสีเขียวสดมีหงอนหลังตั้งแต่หัวถึงหาง ยาวได้ถึง 80 เซนติเมตร พบใกล้ลำธารในป่าดิบชื้นภาคตะวันออก มีทักษะว่ายน้ำเก่งมาก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>ตะกองกินแมลง ปลาเล็ก และสัตว์มีกระดูกสันหลังขนาดเล็ก ออกหากินตอนกลางวัน มักพบนั่งอาบแดดบนกิ่งไม้เหนือน้ำ</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ แต่ถิ่นอาศัยที่เป็นลำธารในป่ากำลังลดลง ต้องการการอนุรักษ์ลำธารและป่าต้นน้ำ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับโลมาอิรวดี -->
+    <div class="modal fade" id="eastAnimal12" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-water"></i> โลมาอิรวดี</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Irrawaddy_dolphin-Orcaella_brevirostris_by_2eight.jpg" class="img-fluid mb-3" alt="โลมาอิรวดี">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>โลมาอิรวดีเป็นโลมาขนาดกลาง หัวกลมหน้าผากโหนก ไม่มีจะงอยปาก ลำตัวสีเทาเข้ม ยาวประมาณ 2-2.5 เมตร พบในน้ำกร่อยและปากแม่น้ำฝั่งตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>โลมาอิรวดีกินปลาขนาดเล็กและสัตว์พื้นทะเล มีนิสัยขี้อายและไม่โผล่ให้เห็นบ่อย มักอาศัยอยู่เป็นกลุ่มเล็ก 3-6 ตัว</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ เนื่องจากอวนปลา มลพิษทางทะเล และเรือด่วน ต้องการการอนุรักษ์แหล่งน้ำกร่อยและปากแม่น้ำ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับแมงกะพรุน -->
+    <div class="modal fade" id="eastAnimal13" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-circle-notch"></i> แมงกะพรุน</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://phuketaquarium.org/wp-content/uploads/2021/09/%E0%B9%81%E0%B8%A1%E0%B8%87%E0%B8%81%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B8%B8%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%88%E0%B8%B8%E0%B8%94.jpg" class="img-fluid mb-3" alt="แมงกะพรุน">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>แมงกะพรุนเป็นสัตว์ทะเลไม่มีกระดูกสันหลัง รูปร่างคล้ายร่มวุ้นใส ร่างกายประกอบด้วยน้ำมากกว่า 95% มีหนวดยาวห้อยลงมาใช้จับเหยื่อและป้องกันตัว พบมากในน่านน้ำชายฝั่งภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>แมงกะพรุนล่าแพลงก์ตอนและลูกปลาโดยใช้หนวดที่มีพิษ ลอยตามกระแสน้ำและไม่มีการควบคุมทิศทางการว่าย บางชนิดมีพิษอันตรายต่อคน</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>เป็นส่วนสำคัญของระบบนิเวศทางทะเล มีบทบาทในห่วงโซ่อาหาร แต่การเพิ่มจำนวนมากเกินไปอาจสะท้อนปัญหาความไม่สมดุลในทะเล</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับเขียดจะนา -->
+    <div class="modal fade" id="eastAnimal14" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-frog"></i> เขียดจะนา</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIa-T7fdP9JYnXdFdaY01ma8JaxTbmhaYnA&s" class="img-fluid mb-3" alt="เขียดจะนา">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>เขียดจะนาเป็นสัตว์ครึ่งบกครึ่งน้ำขนาดเล็กถึงกลาง ลำตัวสีน้ำตาลมีเส้นขาวพาดกลางหลัง ผิวเรียบมันไม่มีสันนูน ขนาดประมาณ 4-7 เซนติเมตร พบตามทุ่งนาและพื้นที่เกษตรภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>เขียดจะนากินแมลงศัตรูพืชเป็นอาหารหลัก ช่วยเกษตรกรควบคุมแมลงศัตรูพืชในนา ออกหากินเวลากลางคืนและช่วงฝนตก</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ เป็นสัตว์ที่มีประโยชน์ต่อการเกษตร ต้องการการลดการใช้สารเคมีในนา</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับจิ้งเหลน -->
+    <div class="modal fade" id="eastAnimal15" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-lizard"></i> จิ้งเหลน</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5KTPTitEBDbYl1HyfAOa3hryecEulDGx2qWGGGX22lYss890a7Es.webp" class="img-fluid mb-3" alt="จิ้งเหลน">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>จิ้งเหลนเป็นสัตว์เลื้อยคลานตัวเล็ก ลำตัวยาวเพรียว ผิวเรียบมันวาว ขาสั้นติดอยู่ข้างลำตัว ขนาดยาวประมาณ 15-25 เซนติเมตร พบทั้งในป่าและพื้นที่เกษตรภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>จิ้งเหลนกินแมลงและหนอนเป็นอาหาร มีประโยชน์ในการควบคุมประชากรแมลงศัตรูพืช มีพฤติกรรมซ่อนตัวใต้ก้อนหินและใบไม้แห้ง</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ เป็นสัตว์ที่มีประโยชน์ต่อการเกษตร ต้องการการรักษาแหล่งอาศัยตามธรรมชาติ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับฉลามครีบดำ -->
+    <div class="modal fade" id="eastAnimal16" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-fish"></i> ฉลามครีบดำ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKe3RnTwE4KSyb_hDTWDDsbKoOR14mc1CIBA&s" class="img-fluid mb-3" alt="ฉลามครีบดำ">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>ฉลามครีบดำเป็นฉลามขนาดกลาง ปลายครีบมีจุดดำเด่นชัด ลำตัวสีเทาอ่อน ยาวประมาณ 1.5-2 เมตร พบตามแนวปะการังและชายฝั่งตื้นภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>ฉลามครีบดำกินปลาเล็กและปลาหมึกเป็นอาหาร ว่ายเร็วและคล่องแคล่ว มักไม่ดุร้ายต่อคน มีความสำคัญต่อระบบนิเวศทางทะเล</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>ถูกคุกคามจากการจับเพื่อครีบฉลามและการทำลายแนวปะการัง ต้องการการอนุรักษ์ทะเลและกฎหมายคุ้มครอง</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับหมีขอ -->
+    <div class="modal fade" id="eastAnimal17" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-paw"></i> หมีขอ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://khaokheow.zoothailand.org/zoo_office/fileupload/encyclopedia_file/78.jpg" class="img-fluid mb-3" alt="หมีขอ">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>หมีขอเป็นสัตว์เลี้ยงลูกด้วยนมในวงศ์ชะมดและอีเห็น ขนยาวสีดำหรือดำอมเทา หางยาวใช้จับยึดกิ่งไม้ได้ ขนาดลำตัวประมาณ 40-60 เซนติเมตร อาศัยบนต้นไม้สูงในป่าดิบชื้นภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>หมีขอกินผลไม้และสัตว์ฟันแทะเล็กเป็นอาหาร มีนิสัยออกหากินตอนกลางคืน มีบทบาทสำคัญในการกระจายเมล็ดพืชในป่า</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ แต่ถิ่นอาศัยที่เป็นป่าดิบชื้นกำลังลดลง ต้องการการอนุรักษ์ป่าต้นน้ำ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับเสือปลา -->
+    <div class="modal fade" id="eastAnimal18" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-cat"></i> เสือปลา</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjqUG_eNcHPJluhB9Zon7R71UaVfnx6GZkQ&s" class="img-fluid mb-3" alt="เสือปลา">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>เสือปลาเป็นแมวป่าขนาดกลาง ลายจุดและลายขีดสีดำพาดลำตัว เท้ามีพังผืดระหว่างนิ้วช่วยว่ายน้ำได้เก่ง ขนาดลำตัวประมาณ 60-80 เซนติเมตร พบในพื้นที่ชุ่มน้ำและป่าชายเลนภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>เสือปลากินปลา กบ และสัตว์น้ำเล็กเป็นอาหารหลัก มีทักษะดำน้ำและจับปลาได้เก่ง มักออกหากินตอนพลบค่ำและกลางคืน</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ เนื่องจากการล่าและการทำลายป่าชายเลน ได้รับการคุ้มครองตามกฎหมายสัตว์ป่าสงวน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับงูทางมะพร้าว -->
+    <div class="modal fade" id="eastAnimal19" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-disease"></i> งูทางมะพร้าว</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVLpM2uHx5gaA-6bJh8nwYfDbf-5VPTOa7w&s" class="img-fluid mb-3" alt="งูทางมะพร้าว">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>งูทางมะพร้าวเป็นงูไม่มีพิษขนาดกลางถึงใหญ่ ลำตัวยาวสีน้ำตาลอมเหลืองมีแถบดำพาดจากท้ายทอย ยาวประมาณ 1.5-2.5 เมตร พบในพื้นที่เกษตรและป่าโปร่งภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>งูทางมะพร้าวกินหนูและสัตว์ฟันแทะเป็นอาหาร มีประโยชน์ในการควบคุมศัตรูพืช มักพบในสวนมะพร้าวและสวนผลไม้ ไม่ดุร้ายต่อคน</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะปกติ เป็นงูที่มีประโยชน์ต่อการเกษตร ควรได้รับการคุ้มครองและอนุรักษ์</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับวัวแดง -->
+    <div class="modal fade" id="eastAnimal20" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-cow"></i> วัวแดง</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://suthiratfoundation.or.th/uploads/images/20230320092538-517071795.jpg" class="img-fluid mb-3" alt="วัวแดง">
+                    <h6 class="text-success">ลักษณะทั่วไป</h6>
+                    <p>วัวแดงเป็นวัวป่าขนาดใหญ่ ตัวผู้สีดำเข้ม ตัวเมียสีน้ำตาลแดง มีถุงเท้าสีขาวที่ขาทั้งสี่ขาอย่างชัดเจน สูงประมาณ 150-170 เซนติเมตร พบในป่าเบญจพรรณและทุ่งหญ้าโปร่งภาคตะวันออก</p>
+                    <h6 class="text-success">อาหารและพฤติกรรม</h6>
+                    <p>วัวแดงกินหญ้าและใบไม้เป็นอาหารหลัก ออกหากินช่วงเช้าและเย็น อาศัยอยู่เป็นฝูงเล็ก มีพฤติกรรมป้องกันตัวเมื่อพบผู้ล่า</p>
+                    <h6 class="text-success">สถานะการอนุรักษ์</h6>
+                    <p>อยู่ในสถานะใกล้สูญพันธุ์ เนื่องจากการล่าและการสูญเสียถิ่นอาศัย ได้รับการคุ้มครองเป็นสัตว์ป่าสงวนแห่งชาติ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-envelope"></i> ติดต่อเรา</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-user"></i> ชื่อ-นามสกุล</label>
+                            <input type="text" class="form-control" required placeholder="กรุณากรอกชื่อ-นามสกุลของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-envelope"></i> อีเมล</label>
+                            <input type="email" class="form-control" required placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-phone"></i> เบอร์โทรศัพท์ (ไม่บังคับ)</label>
+                            <input type="tel" class="form-control" placeholder="08X-XXX-XXXX">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-comment"></i> ข้อความ</label>
+                            <textarea class="form-control" rows="6" required placeholder="กรุณากรอกข้อความของคุณ"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> ยกเลิก
+                    </button>
+                    <button type="submit" form="contactForm" class="btn btn-success">
+                        <i class="fas fa-paper-plane"></i> ส่งข้อความ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3" data-aos="fade-up">
+                    <h5><i class="fas fa-paw"></i> เกี่ยวกับเรา</h5>
+                    <p>DekInw มุ่งมั่นในการเผยแพร่ความรู้เกี่ยวกับสัตว์ป่าไทย และส่งเสริมการอนุรักษ์ธรรมชาติ</p>
+                </div>
+                <div class="col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <h5><i class="fas fa-envelope"></i> ติดต่อเรา</h5>
+                    <p><i class="fas fa-phone"></i> 02-XXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@dekinw.com</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="social-links mb-3">
+                <a href="https://facebook.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="mb-0"><i class="fas fa-copyright"></i> 2025 Animal By DekInw</p>
+        </div>
+    </footer>
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/region.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>ภาคกลาง - DekInw สัตว์ป่าไทย</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/region.css">
+    </head> 
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/18/22/46/deer-8325201_640.png" alt="" width="60" height="60" class="d-inline-block alert-text-top">DekInw
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><i class="fas fa-home"></i> หน้าแรก</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-map-marked-alt"></i> ภูมิภาค
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="north.html"><i class="fas fa-mountain"></i> ภาคเหนือ</a></li>
+                                <li><a class="dropdown-item" href="ภาคตะวันออกเฉียงเหนือ.html"><i class="fas fa-tree"></i> ภาคตะวันออกเฉียงเหนือ</a></li>
+                                <li><a class="dropdown-item" href="central.html"><i class="fas fa-water"></i> ภาคกลาง</a></li>
+                                <li><a class="dropdown-item" href="east.html"><i class="fas fa-sun"></i> ภาคตะวันออก</a></li>
+                                <li><a class="dropdown-item" href="south.html"><i class="fas fa-umbrella-beach"></i> ภาคใต้</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.html"><i class="fas fa-hand-holding-heart"></i> บริจาค</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fas fa-envelope"></i> ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       </div>
+       <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#myslider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="2"></button>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-10 active">
+                    <div class="container">
+                        <div class="carousel-caption" data-aos="fade-up">  
+                            <h3><i class="fas fa-map-marked-alt"></i> ภาคกลาง</h3>
+                            <p>อู่ข้าวอู่น้ำของไทย ถิ่นอาศัยสัตว์ป่าหลากหลาย</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="carousel-item carousel-image-11">
+                <div class="container">
+                    <div class="carousel-caption" data-aos="fade-up">  
+                        <h3><i class="fas fa-water"></i> ลุ่มแม่น้ำเจ้าพระยา</h3>
+                        <p>แหล่งน้ำอุดมสมบูรณ์</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item carousel-image-12">
+                <div class="container"> 
+                    <div class="carousel-caption" data-aos="fade-up">   
+                        <h3><i class="fas fa-kiwi-bird"></i> นกและสัตว์น้ำ</h3>
+                        <p>ความหลากหลายทางชีวภาพ</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#myslider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#myslider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2><i class="fas fa-paw"></i> สัตว์ป่าภาคกลาง</h2>
+            <p class="lead text-muted">ภาคกลางของประเทศไทยเป็นพื้นที่ราบลุ่มกว้างใหญ่ โดยเฉพาะลุ่มแม่น้ำเจ้าพระยา ทำให้ดินอุดมสมบูรณ์เหมาะแก่การเพาะปลูก จึงถูกเรียกว่า "อู่ข้าวอู่น้ำของไทย" พื้นที่ส่วนใหญ่เป็นที่ราบ แต่ยังมีป่าบางส่วนและแหล่งน้ำสำคัญที่เอื้อต่อความหลากหลายทางชีวภาพ</p>
+          </div>
+          <div class="row">
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/614444237/900" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">นกกวัก</h5>
+                  <p class="text-muted flex-grow-1">นกปากช้อนขนาดกลาง พบตามทุ่งนาและหนองน้ำภาคกลาง ใช้ปากคล้ายช้อนจับสัตว์น้ำเล็ก ๆ เป็นอาหาร</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal1">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://dktnfe.com/web59/wp-content/uploads/2014/09/scarlet_minivet_copy6.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-dove"></i> นกพญาไฟ</h5>
+                  <p class="text-muted flex-grow-1">นกน้ำขนาดกลาง พบตามบึงน้ำและหนองน้ำภาคกลาง กินปลา กุ้ง และสัตว์น้ำเล็กเป็นหลัก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal2">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://thumb.photo-ac.com/c8/c8f6bf51b70f37d6f75302371aa0c48e_t.jpeg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-turtle"></i> ตะพาบน้ำ</h5>
+                  <p class="text-muted flex-grow-1">สัตว์ครึ่งบกครึ่งน้ำ กระดองแบนกว้าง พบตามลำคลองและหนองน้ำภาคกลาง กินพืชน้ำและสัตว์น้ำเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal3">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rfYilWauuw9KY8MWA71KZ6tM5GtjB34gmOuE97ABAkCsNYuoXe.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-snake"></i> งูเขียว</h5>
+                  <p class="text-muted flex-grow-1">งูไม่มีพิษสีเขียวสด ตัวเรียวยาว พบในป่ารกร้างและใกล้ลำธารภาคกลาง กินแมลงและสัตว์ตัวเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal4">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://cdn.pixabay.com/photo/2023/12/28/10/23/squirrel-8473819_1280.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-squirrel"></i> กระแต</h5>
+                  <p class="text-muted flex-grow-1">สัตว์เลี้ยงลูกด้วยนมตัวเล็ก อาศัยบนต้นไม้ กินผลไม้และแมลง ช่วยกระจายเมล็ดพืชในป่า</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal5">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://dktnfe.com/web59/wp-content/uploads/2022/12/Untitled-3.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-duck"></i> นกเป็ดไทย</h5>
+                  <p class="text-muted flex-grow-1">นกน้ำขนาดกลาง พบตามบึงน้ำและทุ่งนาภาคกลาง กินพืชน้ำและสัตว์น้ำเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal6">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Aonyx_cinerea_-Edinburgh_Zoo-8.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-otter"></i> นาก</h5>
+                  <p class="text-muted flex-grow-1">นากเป็นสัตว์ครึ่งน้ำครึ่งบก ตัวเพรียวขนสีน้ำตาลเข้ม พบตามลำคลองและแม่น้ำภาคกลาง กินปลา กุ้ง ปู และสัตว์น้ำเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal7">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://f.ptcdn.info/695/014/000/1390200816-photo-o.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-squirrel"></i> กระรอกแดง</h5>
+                  <p class="text-muted flex-grow-1">กระรอกแดงมีขนสีน้ำตาลแดงถึงส้มแดง หางยาวฟู พบในป่าและสวนผลไม้ภาคกลาง กินผลไม้และเมล็ดพืชช่วยกระจายเมล็ด</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal8">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://mpics-cdn.mgronline.com/pics/Images/555000013321402.JPEG" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-fish"></i> ปลาชะโด</h5>
+                  <p class="text-muted flex-grow-1">ปลาชะโดเป็นปลาน้ำจืดนักล่าขนาดใหญ่ ลำตัวยาวสีเข้ม พบในบึงน้ำและลำคลองภาคกลาง กินปลาเล็กและกบ</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal10">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%95%E0%B8%B5%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%28%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%87%29.jpg" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-fish-fins"></i> ปลาตีน</h5>
+                  <p class="text-muted flex-grow-1">ปลาน้ำกร่อยในป่าชายเลน สามารถกระโดดและเดินบนโคลนได้ กินแมลงและสัตว์หน้าดินขนาดเล็ก</p> 
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal9">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/157243721/1200" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><i class="fas fa-crow"></i> นกกระทุง</h5>
+                  <p class="text-muted flex-grow-1">นกกระทุงเป็นนกน้ำขนาดกลาง ลำตัวสีน้ำตาลอมแดง พบในบึงน้ำและทุ่งนาภาคกลาง กินหญ้าน้ำ เมล็ดพืช และสัตว์น้ำเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal11">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXjOErV-LVeYMkgKpNDZHfyfM6SrBx127GBcfHINTahSd2ojsBaZzcwcwDI4nH8dgG5Uc&usqp=CAU" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">อีเห็นหูด่าง</h5>
+                  <p class="text-muted flex-grow-1">อีเห็นหูด่างมีใบหน้าลายขาวคล้ายหน้ากาก หูสีอ่อน ตัวสีน้ำตาลเทาถึงดำ กินทั้งผลไม้และสัตว์เล็ก ช่วยกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal12">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://www.คลังสมุนไพร.com/images/content/original-1533280905334.png" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">ชะมดเช็ด</h5>
+                  <p class="text-muted flex-grow-1">ชะมดเช็ดมีขนสีน้ำตาลเทามีจุดดำ หน้าคล้ายแมว มีกลิ่นจากต่อมที่ท้อง กินผลไม้ แมลง และสัตว์เล็ก ช่วยกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal13">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://media.istockphoto.com/id/1365008587/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%B1%E0%B8%82%E0%B8%88%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%88%E0%B8%AD%E0%B8%81%E0%B8%9A%E0%B8%B4%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%97%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B8%A2.jpg?s=612x612&w=0&k=20&c=htFW_ZCuuaKS3FZDYwew14eC8dYp2tKlpEmldZs9aIw=" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">ค้างคาวแม่ไก่</h5>
+                  <p class="text-muted flex-grow-1">ค้างคาวแม่ไก่เป็นค้างคาวผลไม้ขนาดใหญ่ ปีกกว้าง หูสั้นตาโต กินผลไม้และน้ำหวาน ช่วยผสมเกสรและกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal14">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://www.khaosok.com/wp-content/uploads/2016/07/Bamboo-rat.jpg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">อ้นเล็ก</h5>
+                  <p class="text-muted flex-grow-1">อ้นเล็กเป็นสัตว์ฟันแทะตัวกลมป้อม ขนสีน้ำตาลเทา ขุดโพรงใต้ดิน กินรากไม้และหัวพืช ช่วยพรวนดินและกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal15">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tragulus_javanicus_jerusalem_zoo.jpg/1200px-Tragulus_javanicus_jerusalem_zoo.jpg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">กระจง</h5>
+                  <p class="text-muted flex-grow-1">กระจงเป็นสัตว์เลี้ยงลูกด้วยนมตัวเล็ก ขาสั้น ขนสีน้ำตาลอ่อนถึงเทา พบในป่ารกร้างภาคกลาง กินผลไม้และใบไม้ช่วยกระจายเมล็ด</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal16">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Neotoma_cinerea_%28bushy_tailed_woodrat%29.jpg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">หนูป่าหางพวง</h5>
+                  <p class="text-muted flex-grow-1">หนูป่าหางพวงเป็นสัตว์ฟันแทะขนาดเล็ก ขนสีน้ำตาลเทา หางยาวหุ้มขนบางคล้ายพวง กินเมล็ดพืช ผลไม้ และแมลงเล็ก</p>
+                  <button class="btn btn-success w-100 mt-2" data-bs-toggle="modal" data-bs-target="#centralAnimal17">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    <!-- Modals for Central Region Animals -->
+
+    <!-- นกกวัก -->
+    <div class="modal fade" id="centralAnimal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">นกกวัก</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/614444237/900" class="img-fluid mb-3" alt="นกกวัก">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>นกกวักเป็นนกปากช้อนขนาดกลาง มีจะงอยปากแบนกว้างคล้ายช้อน ขายาว ปีกยาว พบได้ตามทุ่งนา หนองน้ำ และบึงน้ำในภาคกลางที่มีระดับน้ำตื้นและอุดมด้วยสัตว์น้ำเล็ก ๆ</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>อาหารหลักของนกกวักคือหอยน้ำจืด สัตว์หน้าดิน และสัตว์น้ำขนาดเล็ก โดยจะใช้ปากคล้ายช้อนกวาดไปตามผิวน้ำหรือโคลน มักออกหากินเป็นฝูงเล็ก ๆ ในช่วงเช้าและเย็น</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>นกกวักยังพบได้ค่อนข้างบ่อยในพื้นที่ชุ่มน้ำของภาคกลาง แต่ถิ่นอาศัยอย่างทุ่งนาและหนองน้ำกำลังลดลงจากการเปลี่ยนแปลงการใช้ที่ดิน จึงควรอนุรักษ์แหล่งชุ่มน้ำไว้เพื่อให้เป็นบ้านของนกน้ำชนิดนี้ต่อไป</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- นกพญาไฟ -->
+    <div class="modal fade" id="centralAnimal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-dove"></i> นกพญาไฟ</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://dktnfe.com/web59/wp-content/uploads/2014/09/scarlet_minivet_copy6.jpg" class="img-fluid mb-3" alt="นกพญาไฟ">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>นกพญาไฟเป็นนกขนาดเล็กถึงกลาง สีสันสดใส ตัวผู้มักมีสีแดงส้มตัดกับสีดำหรือน้ำเงินเข้ม ส่วนตัวเมียสีจะอ่อนกว่า พบตามแนวป่าริมน้ำ พื้นที่ชุ่มน้ำ และสวนต้นไม้ในภาคกลาง</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>นกพญาไฟกินแมลงขนาดเล็ก ตัวอ่อนแมลง และสัตว์น้ำเล็ก เช่น ลูกปลาและกุ้งตามขอบบึงหรือหนองน้ำ มักเกาะตามกิ่งไม้ใกล้น้ำแล้วโฉบจับเหยื่ออย่างรวดเร็ว</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังไม่จัดเป็นสัตว์ใกล้สูญพันธุ์ แต่ได้รับผลกระทบจากการสูญเสียพื้นที่ป่าริมน้ำและแหล่งน้ำธรรมชาติ การรักษาพื้นที่สีเขียวและแหล่งน้ำที่สะอาดจึงช่วยให้ประชากรนกพญาไฟคงอยู่ได้อย่างยั่งยืน</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ตะพาบน้ำ -->
+    <div class="modal fade" id="centralAnimal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-turtle"></i> ตะพาบน้ำ</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://thumb.photo-ac.com/c8/c8f6bf51b70f37d6f75302371aa0c48e_t.jpeg" class="img-fluid mb-3" alt="ตะพาบน้ำ">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>ตะพาบน้ำเป็นสัตว์ครึ่งบกครึ่งน้ำที่มีกระดองแบนและนุ่มกว่ากระดองเต่าทั่วไป จมูกยาวคล้ายหลอดเล็ก ๆ ใช้โผล่ขึ้นมาหายใจ พบได้ตามลำคลอง หนองน้ำ และบึงน้ำในภาคกลาง</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>ตะพาบน้ำกินทั้งพืชน้ำและสัตว์น้ำเล็ก เช่น ปลา ลูกกุ้ง หอยน้ำจืด และแมลงน้ำ มักฝังตัวอยู่ในโคลนหรือนอนนิ่งอยู่ใต้น้ำเพื่อซุ่มรอเหยื่อ ออกหากินมากในช่วงเย็นและกลางคืน</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ตะพาบน้ำบางชนิดถูกล่าเพื่อนำไปบริโภคหรือเลี้ยงเป็นสัตว์น้ำเศรษฐกิจ ทำให้จำนวนลดลงในบางพื้นที่ การควบคุมการจับและการอนุรักษ์แหล่งน้ำธรรมชาติช่วยให้ตะพาบน้ำยังคงอยู่ในระบบนิเวศได้</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- งูเขียว -->
+    <div class="modal fade" id="centralAnimal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-snake"></i> งูเขียว</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rfYilWauuw9KY8MWA71KZ6tM5GtjB34gmOuE97ABAkCsNYuoXe.jpg" class="img-fluid mb-3" alt="งูเขียว">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>งูเขียวเป็นงูไม่มีพิษ สีเขียวสด ตัวเรียวยาว ดวงตากลมโต มักอาศัยตามพุ่มไม้ ป่ารกร้าง หรือบริเวณใกล้ลำธารในพื้นที่ภาคกลาง ลักษณะสีช่วยพรางตัวกลมกลืนกับใบไม้</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>งูเขียวกินแมลง ตัวอ่อนแมลง และสัตว์ตัวเล็ก เช่น กิ้งก่าและลูกกบ มักออกหากินในตอนเช้าหรือเย็น ไม่ก้าวร้าวต่อคนและมักหนีเมื่อถูกรบกวน</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>แม้งูเขียวจะไม่เป็นอันตราย แต่ก็มักถูกทำร้ายเพราะคนส่วนใหญ่กลัวงูทุกชนิด การให้ความรู้ประชาชนเกี่ยวกับงูที่ไม่มีพิษช่วยลดการทำลายสัตว์ที่มีบทบาทในระบบนิเวศ เช่น การควบคุมจำนวนแมลง</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- กระแต -->
+    <div class="modal fade" id="centralAnimal5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-squirrel"></i> กระแต</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://cdn.pixabay.com/photo/2023/12/28/10/23/squirrel-8473819_1280.jpg" class="img-fluid mb-3" alt="กระแต">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>กระแตเป็นสัตว์เลี้ยงลูกด้วยนมตัวเล็ก ใกล้เคียงกับกระรอกแต่ตัวเล็กกว่า ขนสีน้ำตาลอ่อนถึงเทา หางยาวฟู มักพบอาศัยอยู่บนต้นไม้หรือกองไม้ในป่าและสวนผลไม้ภาคกลาง</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>กระแตกินผลไม้ เมล็ดพืช และแมลงขนาดเล็ก เคลื่อนไหวว่องไว กระโดดไปมาระหว่างกิ่งไม้ ช่วยกระจายเมล็ดพืชเมื่อกินผลไม้แล้วขับถ่ายเมล็ดออกในพื้นที่ต่าง ๆ</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ทั่วไปในป่าและสวน แต่ถิ่นอาศัยอาจลดลงจากการตัดไม้และขยายพื้นที่เกษตรเชิงเดี่ยว การรักษาพื้นที่ป่าและสวนผสมจะช่วยให้กระแตและสัตว์เล็กอื่น ๆ มีบ้านอยู่อย่างสมดุล</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- นกเป็ดไทย -->
+    <div class="modal fade" id="centralAnimal6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-duck"></i> นกเป็ดไทย</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://dktnfe.com/web59/wp-content/uploads/2022/12/Untitled-3.jpg" class="img-fluid mb-3" alt="นกเป็ดไทย">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>นกเป็ดไทยเป็นนกน้ำขนาดกลาง ลำตัวสีน้ำตาลอ่อน ปากสีเหลืองหรือเหลืองปนดำ ขายาวปานกลาง ว่ายน้ำเก่ง พบได้ในบึงน้ำ หนองน้ำ และทุ่งนาที่มีน้ำขังในภาคกลาง</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>อาหารของนกเป็ดไทยคือพืชน้ำ เมล็ดพืช สาหร่าย รวมถึงสัตว์น้ำเล็ก เช่น หอยและลูกปลา มักหากินเป็นฝูงเล็ก ๆ และชอบว่ายน้ำหรือดำน้ำตื้น ๆ เพื่อหาอาหารตามผิวน้ำ</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>จำนวนยังค่อนข้างเสถียรในหลายพื้นที่ แต่เสี่ยงจากการใช้สารเคมีกำจัดศัตรูพืชในแหล่งเกษตรและการทำลายพื้นที่ชุ่มน้ำ การลดการใช้สารเคมีและอนุรักษ์บึงน้ำธรรมชาติจะช่วยให้นกเป็ดไทยอยู่ร่วมกับชุมชนได้อย่างยั่งยืน</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ปลาตีน -->
+    <div class="modal fade" id="centralAnimal9" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-fish-fins"></i> ปลาตีน</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%95%E0%B8%B5%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%28%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%87%29.jpg" class="img-fluid mb-3" alt="ปลาตีน">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>ปลาตีนเป็นปลาน้ำกร่อยที่อาศัยในป่าชายเลน ลำตัวยาวปานกลาง หัวโต ดวงตาโปนอยู่ด้านบน สามารถดีดตัวและเคลื่อนที่บนโคลนได้โดยใช้ครีบและลำตัว จึงได้ชื่อว่าปลาตีน</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>ปลาตีกินแมลง ปลาขนาดเล็ก หนอน และสัตว์หน้าดินอื่น ๆ มักอาศัยอยู่บริเวณดินเลนริมชายฝั่งทะเลหรือป่าชายเลน ชอบขึ้นมาอยู่บนโคลนหรือรากไม้เมื่อน้ำลง</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ปลาตีนยังพบได้ในหลายพื้นที่ชายฝั่งของไทย แต่ถิ่นอาศัยอย่างป่าชายเลนเคยถูกทำลายลงอย่างมาก การฟื้นฟูและรักษาป่าชายเลนไม่เพียงช่วยปลาตีนเท่านั้น แต่ยังช่วยสัตว์น้ำและนกน้ำอีกหลายชนิดด้วย</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- นาก -->
+    <div class="modal fade" id="centralAnimal7" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-otter"></i> นาก</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Aonyx_cinerea_-Edinburgh_Zoo-8.jpg" class="img-fluid mb-3" alt="นาก">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>นากเป็นสัตว์เลี้ยงลูกด้วยนมครึ่งน้ำครึ่งบก ลำตัวเพรียวยาว ขนสีน้ำตาลเข้มกันน้ำได้ดี เท้ามีพังผืดช่วยให้ว่ายน้ำคล่อง พบตามลำคลอง แม่น้ำ และบึงน้ำในภาคกลางที่ยังมีความอุดมสมบูรณ์</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>นากกินปลา กุ้ง ปู และสัตว์น้ำขนาดเล็กเป็นหลัก มักออกหากินเป็นฝูงเล็ก ๆ เล่นน้ำและกลิ้งตัวบนโคลนหรือหาดทราย ช่วยควบคุมปริมาณสัตว์น้ำในระบบนิเวศให้สมดุล</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>นากหลายพื้นที่ถูกคุกคามจากการทำลายถิ่นอาศัยและการล่าเพื่อเอาหนังหรือจับไปเลี้ยง การอนุรักษ์แหล่งน้ำธรรมชาติและการไม่ล่านากเป็นสิ่งสำคัญต่อการอยู่รอดของสัตว์ชนิดนี้</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- กระรอกแดง -->
+    <div class="modal fade" id="centralAnimal8" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-squirrel"></i> กระรอกแดง</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://f.ptcdn.info/695/014/000/1390200816-photo-o.jpg" class="img-fluid mb-3" alt="กระรอกแดง">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>กระรอกแดงมีขนสีน้ำตาลแดงถึงส้มแดงสดใส หางยาวฟูช่วยทรงตัวเวลากระโดด พบในป่าและสวนผลไม้ภาคกลาง ชอบอาศัยบนต้นไม้สูงและมีการเคลื่อนไหวว่องไวมาก</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>กระรอกแดงกินผลไม้ เมล็ดพืช และเปลือกไม้บาง ๆ มักเก็บอาหารไว้ในโพรงต้นไม้เป็นสต็อก ช่วยกระจายเมล็ดพืชเมื่อทำเมล็ดหล่นหรือฝังไว้ใต้ดินแล้วลืม</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ทั่วไปในหลายพื้นที่ แต่ถิ่นอาศัยลดลงจากการตัดไม้และการขยายเมือง การรักษาพื้นที่สวนและป่าช่วยให้กระรอกแดงและสัตว์ป่าอื่น ๆ มีบ้านอยู่ได้อย่างยั่งยืน</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ปลาชะโด -->
+    <div class="modal fade" id="centralAnimal10" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-fish"></i> ปลาชะโด</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://mpics-cdn.mgronline.com/pics/Images/555000013321402.JPEG" class="img-fluid mb-3" alt="ปลาชะโด">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>ปลาชะโดเป็นปลาน้ำจืดนักล่าขนาดใหญ่ ลำตัวยาวสีเข้มเกือบดำ หัวใหญ่ ปากกว้างมีฟันแหลมคม พบในบึงน้ำ ลำคลอง และแม่น้ำภาคกลางที่มีพืชน้ำหนาแน่น</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>ปลาชะโดกินปลาขนาดเล็ก กบ และสัตว์น้ำอื่น ๆ เป็นนักล่าที่รอคอยเหยื่ออย่างอดทนในพุ่มพืชน้ำ แล้วโฉบจับด้วยความเร็วสูง มีบทบาทควบคุมจำนวนปลาเล็กในระบบนิเวศ</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ปลาชะโดยังพบได้ในหลายแหล่งน้ำ แต่จำนวนลดลงจากการใช้สารเคมีทางการเกษตรและการจับมากเกินไป การรักษาคุณภาพน้ำและไม่จับปลาตัวเล็กจะช่วยให้ปลาชะโดมีโอกาสสืบพันธุ์ต่อไป</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- นกกระทุง -->
+    <div class="modal fade" id="centralAnimal11" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title"><i class="fas fa-crow"></i> นกกระทุง</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/157243721/1200" class="img-fluid mb-3" alt="นกกระทุง">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>นกกระทุงเป็นนกน้ำขนาดกลาง ลำตัวสีน้ำตาลอมแดง คอและหัวมีลักษณะโดดเด่น ขายาว พบในบึงน้ำ หนองน้ำ และทุ่งนาภาคกลางที่มีพืชน้ำและหญ้าสูง</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>นกกระทุงกินหญ้าน้ำ เมล็ดพืช และสัตว์น้ำเล็ก ๆ เช่น แมลงน้ำและหอยเล็ก มักหากินตามขอบบึงหรือทุ่งน้ำตื้น ในฤดูผสมพันธุ์จะทำรังบนพื้นดินใกล้น้ำ</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>จำนวนนกกระทุงค่อนข้างเสถียร แต่ถิ่นอาศัยอย่างทุ่งนาและหนองน้ำลดลงจากการเปลี่ยนแปลงการใช้ที่ดิน การอนุรักษ์พื้นที่ชุ่มน้ำช่วยให้นกกระทุงและนกน้ำอื่น ๆ มีที่อยู่อาศัยต่อไป</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- อีเห็นหูด่าง -->
+    <div class="modal fade" id="centralAnimal12" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">อีเห็นหูด่าง</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXjOErV-LVeYMkgKpNDZHfyfM6SrBx127GBcfHINTahSd2ojsBaZzcwcwDI4nH8dgG5Uc&usqp=CAU" class="img-fluid mb-3" alt="อีเห็นหูด่าง">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>อีเห็นหูด่างมีใบหน้าลายขาวคล้ายหน้ากาก หูสีอ่อนมีขนยาว ตัวสีน้ำตาลเทาถึงดำ ขนาดกลางถึงใหญ่ พบในป่าและสวนผลไม้ภาคกลาง มักออกหากินในเวลากลางคืน</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>อีเห็นหูด่างกินทั้งผลไม้ แมลง และสัตว์เล็ก เช่น กิ้งก่าและหนู เป็นสัตว์เดี่ยวและมีพฤติกรรมระมัดระวังตัวสูง ช่วยกระจายเมล็ดพืชและควบคุมจำนวนสัตว์เล็ก</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ในหลายพื้นที่ป่า แต่ถิ่นอาศัยลดลงจากการตัดไม้และการขยายพื้นที่เกษตร การรักษาป่าและสวนผสมช่วยให้อีเห็นหูด่างและสัตว์กลางคืนอื่น ๆ มีบ้านอยู่ได้</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ชะมดเช็ด -->
+    <div class="modal fade" id="centralAnimal13" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">ชะมดเช็ด</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://www.คลังสมุนไพร.com/images/content/original-1533280905334.png" class="img-fluid mb-3" alt="ชะมดเช็ด">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>ชะมดเช็ดมีขนสีน้ำตาลเทามีจุดหรือลายดำ หน้าคล้ายแมว หางยาว มีต่อมกลิ่นที่ท้องใช้ทำเครื่องหมายอาณาเขต พบในป่าและสวนผลไม้ภาคกลาง ออกหากินตอนกลางคืน</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>ชะมดเช็ดกินผลไม้สุก แมลง และสัตว์เล็ก ชอบปีนต้นไม้คล่อง เป็นสัตว์เดี่ยวและมีนิสัยระมัดระวัง ช่วยกระจายเมล็ดพืชและควบคุมจำนวนแมลงในป่า</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ในหลายพื้นที่ แต่ประชากรลดลงจากการสูญเสียถิ่นอาศัยและการล่าเพื่อเอาต่อมกลิ่น การอนุรักษ์ป่าและการไม่ล่าชะมดช่วยให้สัตว์ชนิดนี้อยู่รอดได้</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ค้างคาวแม่ไก่ -->
+    <div class="modal fade" id="centralAnimal14" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">ค้างคาวแม่ไก่</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://media.istockphoto.com/id/1365008587/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%B1%E0%B8%82%E0%B8%88%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%88%E0%B8%AD%E0%B8%81%E0%B8%9A%E0%B8%B4%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%97%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B8%A2.jpg?s=612x612&w=0&k=20&c=htFW_ZCuuaKS3FZDYwew14eC8dYp2tKlpEmldZs9aIw=" class="img-fluid mb-3" alt="ค้างคาวแม่ไก่">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>ค้างคาวแม่ไก่เป็นค้างคาวผลไม้ขนาดใหญ่ ปีกกว้างถึง 1 เมตร หูสั้น ตาโตเห็นได้ดีในที่มืด ขนสีน้ำตาลแดง พบในป่าและสวนผลไม้ภาคกลาง ออกหากินตอนค่ำ</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>ค้างคาวแม่ไก่กินผลไม้สุก น้ำหวานจากดอกไม้ และใบอ่อน มักบินไปหากินเป็นฝูง ช่วยผสมเกสรพืชและกระจายเมล็ดพืชในป่า มีบทบาทสำคัญต่อการฟื้นฟูป่า</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ทั่วไป แต่ถิ่นอาศัยและแหล่งอาหารลดลง การรักษาต้นไม้ใหญ่และสวนผลไม้ช่วยให้ค้างคาวแม่ไก่มีที่พักและอาหารเพียงพอ ซึ่งเป็นประโยชน์ต่อระบบนิเวศ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- อ้นเล็ก -->
+    <div class="modal fade" id="centralAnimal15" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">อ้นเล็ก</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://www.khaosok.com/wp-content/uploads/2016/07/Bamboo-rat.jpg" class="img-fluid mb-3" alt="อ้นเล็ก">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>อ้นเล็กเป็นสัตว์ฟันแทะตัวกลมป้อม ขนสีน้ำตาลเทา หูเล็ก หางสั้น ขุดโพรงใต้ดินอาศัยอยู่ พบในพื้นที่ป่าและสวนที่มีดินร่วนซุยในภาคกลาง</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>อ้นเล็กกินรากไม้ หัวพืช และลำต้นอ่อน มักขุดอุโมงค์ใต้ดินกว้างขวางเพื่อหาอาหาร ช่วยพรวนดินและกระจายเมล็ดพืชในป่า แม้บางครั้งจะสร้างความเสียหายให้พืชเกษตร</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ในหลายพื้นที่ แต่ถูกจับเป็นอาหารและสัตว์เลี้ยงเศรษฐกิจ ทำให้จำนวนลดลง การไม่จับมากเกินไปและรักษาป่าช่วยให้อ้นมีบทบาทในระบบนิเวศต่อไป</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- กระจง -->
+    <div class="modal fade" id="centralAnimal16" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">กระจง</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tragulus_javanicus_jerusalem_zoo.jpg/1200px-Tragulus_javanicus_jerusalem_zoo.jpg" class="img-fluid mb-3" alt="กระจง">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>กระจงเป็นสัตว์เลี้ยงลูกด้วยนมตัวเล็กที่สุดในตระกูลกวาง ขาสั้น ตัวเล็ก ขนสีน้ำตาลอ่อนถึงเทา หลังโค้งมน พบในป่ารกร้างและพุ่มไม้ภาคกลาง เคลื่อนไหวคล่องแคล่ว</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>กระจงกินผลไม้ที่หล่นลงพื้น ใบไม้อ่อน และหน่อไม้ มักออกหากินตอนเช้าและเย็น หลบซ่อนในพุ่มไม้กลางวัน ช่วยกระจายเมล็ดพืชและเป็นส่วนหนึ่งของห่วงโซ่อาหารในป่า</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>กระจงยังพบได้ในหลายพื้นที่ป่า แต่ถูกล่าเป็นอาหารและถิ่นอาศัยลดลง การอนุรักษ์ป่าและการไม่ล่าสัตว์ป่าช่วยให้กระจงมีโอกาสสืบพันธุ์และอยู่รอดในธรรมชาติ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- หนูป่าหางพวง -->
+    <div class="modal fade" id="centralAnimal17" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">หนูป่าหางพวง</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Neotoma_cinerea_%28bushy_tailed_woodrat%29.jpg" class="img-fluid mb-3" alt="หนูป่าหางพวง">
+            <h6 class="text-success">ลักษณะทั่วไป</h6>
+            <p>หนูป่าหางพวงเป็นสัตว์ฟันแทะขนาดเล็ก ขนสีน้ำตาลเทา หางยาวหุ้มด้วยขนบาง ๆ คล้ายพวงดอกไม้ จึงได้ชื่อ พบในป่า พุ่มไม้ และสวนภาคกลาง เคลื่อนไหวคล่องแคล่ว</p>
+            <h6 class="text-success">อาหารและพฤติกรรม</h6>
+            <p>หนูป่าหางพวงกินเมล็ดพืช ผลไม้เล็ก และแมลงเล็ก ๆ มักทำรังในโพรงไม้หรือพุ่มไม้หนาทึบ ออกหากินตอนกลางคืน ช่วยกระจายเมล็ดพืชและเป็นอาหารของสัตว์นักล่าขนาดเล็ก</p>
+            <h6 class="text-success">สถานะการอนุรักษ์</h6>
+            <p>ยังพบได้ทั่วไปในหลายพื้นที่ป่าและสวน แม้จะไม่ถูกคุกคามโดยตรง แต่การรักษาถิ่นอาศัยและไม่ใช้สารเคมีมากเกินไปช่วยให้หนูป่าหางพวงมีบทบาทในระบบนิเวศได้</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-envelope"></i> ติดต่อเรา</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-user"></i> ชื่อ-นามสกุล</label>
+                            <input type="text" class="form-control" required placeholder="กรุณากรอกชื่อ-นามสกุลของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-envelope"></i> อีเมล</label>
+                            <input type="email" class="form-control" required placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-phone"></i> เบอร์โทรศัพท์ (ไม่บังคับ)</label>
+                            <input type="tel" class="form-control" placeholder="08X-XXX-XXXX">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-comment"></i> ข้อความ</label>
+                            <textarea class="form-control" rows="6" required placeholder="กรุณากรอกข้อความของคุณ"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> ยกเลิก
+                    </button>
+                    <button type="submit" form="contactForm" class="btn btn-success">
+                        <i class="fas fa-paper-plane"></i> ส่งข้อความ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3" data-aos="fade-up">
+                    <h5><i class="fas fa-paw"></i> เกี่ยวกับเรา</h5>
+                    <p>DekInw มุ่งมั่นในการเผยแพร่ความรู้เกี่ยวกับสัตว์ป่าไทย และส่งเสริมการอนุรักษ์ธรรมชาติ</p>
+                </div>
+                <div class="col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <h5><i class="fas fa-envelope"></i> ติดต่อเรา</h5>
+                    <p><i class="fas fa-phone"></i> 02-XXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@dekinw.com</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="social-links mb-3">
+                <a href="https://facebook.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="mb-0"><i class="fas fa-copyright"></i> 2025 Animal By DekInw</p>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/region.js"></script>
+    </body>
+</html>
+

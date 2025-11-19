@@ -1,0 +1,959 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>DekInw</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/region.css">
+    </head> 
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/18/22/46/deer-8325201_640.png" alt="" width="60" height="60" class="d-inline-block alert-text-top">DekInw
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><i class="fas fa-home"></i> หน้าแรก</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-map-marked-alt"></i> ภูมิภาค
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="north.html"><i class="fas fa-mountain"></i> ภาคเหนือ</a></li>
+                                <li><a class="dropdown-item" href="ภาคตะวันออกเฉียงเหนือ.html"><i class="fas fa-tree"></i> ภาคตะวันออกเฉียงเหนือ</a></li>
+                                <li><a class="dropdown-item" href="central.html"><i class="fas fa-water"></i> ภาคกลาง</a></li>
+                                <li><a class="dropdown-item" href="east.html"><i class="fas fa-sun"></i> ภาคตะวันออก</a></li>
+                                <li><a class="dropdown-item" href="south.html"><i class="fas fa-umbrella-beach"></i> ภาคใต้</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.html"><i class="fas fa-hand-holding-heart"></i> บริจาค</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fas fa-envelope"></i> ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       </div>
+       <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#myslider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="2"></button>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-16 active">
+                    <div class="container">
+                        <div class="carousel-caption" data-aos="fade-up">  
+                            <h3><i class="fas fa-water"></i> สัตว์ป่าภาคใต้</h3>
+                            <p>ค้นพบความหลากหลายของสัตว์ป่าในภาคใต้ของประเทศไทย</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="carousel-item carousel-image-17">
+                <div class="container">
+                    <div class="carousel-caption" data-aos="fade-up">  
+                        <h3><i class="fas fa-fish"></i> ระบบนิเวศทางทะเล</h3>
+                        <p>สำรวจชีวิตสัตว์ใต้ทะเลอันงดงาม</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item carousel-image-18">
+                <div class="container"> 
+                    <div class="carousel-caption" data-aos="fade-up">   
+                        <h3><i class="fas fa-leaf"></i> อนุรักษ์ธรรมชาติ</h3>
+                        <p>ร่วมกันปกป้องและอนุรักษ์สัตว์ป่าที่หายาก</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#myslider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#myslider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+          <div class="section-header">
+            <h2><i class="fas fa-paw"></i> สัตว์ป่าภาคใต้</h2>
+            <p class="text-muted">ค้นพบความหลากหลายทางชีวภาพที่น่าทึ่งของภาคใต้</p>
+          </div>
+          <p>ภาคใต้
+                ภาคใต้ของประเทศไทยเป็นดินแดนที่รายล้อมด้วยทะเลทั้งสองด้าน คือฝั่งอ่าวไทยและฝั่งทะเลอันดามัน ทำให้ภูมิภาคนี้มีทรัพยากรทางทะเลที่หลากหลายและมีความสมบูรณ์สูง 
+                พื้นที่ส่วนใหญ่ประกอบด้วยภูเขาสูงสลับที่ราบชายฝั่ง ป่าดิบชื้น และป่าชายเลนที่อุดมไปด้วยพันธุ์ไม้และสัตว์นานาชนิด ลักษณะภูมิอากาศของภาคใต้จะค่อนข้างร้อนชื้นและมีฝนตกชุกตลอดปี จึงเป็นภูมิภาคที่เหมาะสำหรับการเกิดระบบนิเวศป่าฝนเขตร้อน สัตว์ป่าในภาคใต้มีทั้งสัตว์บก สัตว์น้ำ และสัตว์เฉพาะถิ่น รวมถึงสัตว์หายากหลายชนิดที่ต้องได้รับการอนุรักษ์ ไม่ว่าจะเป็นในผืนป่าดงดิบหรือในแนวปะการังใต้น้ำ ทำให้ภาคใต้เป็นหนึ่งในภูมิภาคที่มีความหลากหลายทางชีวภาพสูงที่สุดของประเทศ</p>
+          <div class="row">
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-turtle"></i> เต่าทะเล</h5>
+                  <p class="text-muted">สัตว์เลื้อยคลานที่อาศัยอยู่ตามชายฝั่งและในทะเลลึกของภาคใต้ มีกระดองแข็งและครีบยาวช่วยให้ว่ายน้ำได้คล่องตัว</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal1">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg" class="card-img-top" alt="นกกระปูดใหญ่" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-kiwi-bird"></i> นกกระปูดใหญ่</h5>
+                  <p class="text-muted">นกป่าชายเลนปากยาวที่ชอบเดินหาเหยื่อในโคลนเลน ปีกสีน้ำตาลเข้มสะท้อนแสงสวยงามเมื่อโผบิน</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal2">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/3691809/pexels-photo-3691809.jpeg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-hippo"></i> ช้างเอเชีย</h5>
+                  <p class="text-muted">สัตว์เลี้ยงลูกด้วยนมขนาดใหญ่ มีหูขนาดเล็กกว่าช้างแอฟริกา งวงแข็งแรง และมีพฤติกรรมอยู่เป็นฝูง</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal3">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/34270200/pexels-photo-34270200.jpeg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-otter"></i> แพนกอลิน</h5>
+                  <p class="text-muted">สัตว์เลี้ยงลูกด้วยนมที่มีเกล็ดแข็งคลุมลำตัว สามารถม้วนตัวเป็นลูกบอลเพื่อป้องกันตัว อาหารหลักคือมดและปลวก</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal4">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/34627664/pexels-photo-34627664.jpeg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-dove"></i> นกปากซ่อม</h5>
+                  <p class="text-muted">นกที่มีปากใหญ่โดดเด่น อาศัยในป่าดิบชื้น หากินผลไม้และแมลง มีบทบาทสำคัญในการกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal5">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/26800454/pexels-photo-26800454.jpeg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-horse"></i> สมเสร็จ</h5>
+                  <p class="text-muted">สัตว์บกขนาดใหญ่ในตระกูลวัวป่า มีร่างกายแข็งแรง เขาโค้งสวยงาม กินพืชเป็นอาหาร มีบทบาทกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal6">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/8465213/pexels-photo-8465213.jpeg" class="card-img-top" alt="" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-cow"></i> กระทิง</h5>
+                  <p class="text-muted">สัตว์บกขนาดใหญ่ในตระกูลวัวป่า ตัวผู้มีสีเข้มเกือบดำ มีเขาโค้งยาว กินหญ้าและใบไม้เป็นอาหาร</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal7">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQZ5xG_BKuu7Pdy3g_IjSU2LXXyCeYea-ogTD3hAOMG02Pe_n1OLv1eErMfjFEtT7HpKXVLVO-ARvSitvxjqsIIPUVjHlFexdtlJR62XFVg&s=10" class="card-img-top" alt="นกอีโก้ง" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-kiwi-bird"></i> นกอีโก้ง</h5>
+                  <p class="text-muted">นกปากซ่อมสีเข้มจากป่าชายเลน ปากแดงสดช่วยคว้าเหยื่ออย่างปลาและกุ้งในแหล่งน้ำตื้น</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal8">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGBcXGBgYGBsXGBgaGBUXFxcaGhgaHSggGholHRgXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKkBKgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwEEBQAGB//EADsQAAEDAwEFBQcDAwQDAQEAAAEAAhEDITFBBBJRYXEFgZGhsQYTIjLB0fBC4fEUUmIjM3KCkqKywhX/xAAZAQEBAQEBAQAAAAAAAAAAAAABAAIDBAX/xAAlEQEBAQACAgICAgIDAAAAAAAAARECIRIxA0FRYRMigZEEMkL/2gAMAwEAAhEDEQA/AM6lSGqtf1JAgBVjWTKzC0DmvBeM3K90/IXViDcpdcE3JTGUCblNdQEZWvDGfJSoxKtNKX7xoMAIyCeivHT5YJzowhe8DVD7qVIogCZV4LyKYXTOiuUq4Vd5CAURxV4Lyq8dqEpdR4JyFVDLpooglHjBeVqzLUYqcELyOSQ+sRhHjFFphJUmmg2Wu1o36zxTpjLiYk/2tGXO5BSztOjV+Km6xwCfiHUadEyN3hZNovdQ2SqVUCU2pVkwCnBgOTdA6VtnbGQU0g6I6josEFxc+SLVhm4RolVr6Jvv5CTUrkYQchYYU0uR0Kk5Cmq3VVokVyCULWGbp9N0ZSnV96QAnirHOqEHkoc5JFzdS8GIF108WNGatlXbWcUFJrsEX4K3T2UgXRejOwvNkhjyrD6fNLDBFkTl+VYEuRtMoKrLKN+MLU5DxFKhxlKNSCi97orsVz2wg94FJcV24tA4s1UteXYmy5rwpB4In7a38D3nEXKU1E0oxJ0UNC9sC2V0ko3EAdFFV4DZShNA1XFgKqMeSrE4upO3VO5J5KdzWVLgoFvaZthG6wUMN0bWklF/Z7V3gx1U1ab6bC4scSGl4GpABOuMHwXsdgrbFs7Yc5tSqfmcPig8GRcDnqsv2j7d3qDqeysaHukS/EOEOMukkwvDP+Vfkvj8fG+/dnT0fHx48P7c5/h8k2ntE1nOq1XHewxjRLWAEWuZAziZOVd2RroDmWhVNu7HrU5LmEgZc29uNrxzhP2LaHBu4BnUr68zOnhvK27XrOxNtNUEO+dsTzGh8itr3JPIrwXsptRbthBsHBze8DeHp5r3pdK8vy9csd/j/tx0lzQ3JU0qzDqudjCinswcbLHVb7R7uTYrnUBxT3bCRqkGkRhWQAabwFIJm6EN1hLcTMAFWEVR5JhRTaAU2lRM2CFuyu3iSYHBaxmoKYHWlSGt1K4VgLQqwylOEGRlQ97lYpkOEAKuxl7oOgaTCkFLryEWy1AQiyrYCswkWVb4hoVol3BKfUJsqSrYoh5OExhvCc1gU+6C1lZ2FV5AsqM1OBWnuIbqmi4YGwZUm2ikPkQhAK6YNjiZTKUjVLATQ8ACxKMGlvBdKTTa5pM9ysl38ImsTiKayb4XAQn8JRtMI7iL6IgEBqZ0XMeTgoJpp2tlFRo8SktaTm3emNpR0Rh1zqDd6ZRsYELgBzQVDhFPSNrqNaxxOAP2C8O2A4bogfn2W97UbUGhjB+qSe6APqvP06cz+ZiPVej4uORw+Xl3h3sxR39qk2Aa93m1v1K95Vqw3ReR7GY2i/fJs4bpgExJEGOrfNegZVYcP/O9c/klvJ0+KycVjaK2N2COP0Q7Lvg70C/MrmMaI+JszBuJTqlNxFiudtnqOnS03eIuUBAIgJBltnEzwi/FL98Bd1hzsuf9vwTN3dFio3LzK5lcfpumtq8Qq8qPGBc7mpplv8oKjhKE+KNqsgHvk2AATWsb+BUTcmSRwVj3hgWCbqlg6mYHooe3gVAFt5BUktlueato0D2c0ijyxxUt2QuHxJ9NhAjTgt7gQTaUtz0dQEHkofSFslMRNOo0GXG6J1XgheGi+6mQTEBbY0unU0wi92m1KZEH0S/du5JyrTBM3Ec1BaYsrTqWs24IgwLWBnMDy4giwxzRirBwr4MWUmEYdVd9uSpNcfMrJACEtEXGVoK52kFZ5rVHuIa2G8VonZWaNwnNgI2LtWpUCBcSrGziAZlT73QImlGwhsbomtMI4AQtXO1rAPAXE2sLpgbAk5U71sK2RY8b7XtitTJwWeYcSfULHdtO46QTFvzuXuPaHsn39OxHvGHeZNurZ4EeccF4fanhzbiHNlpEXaQYuvR8fKWOHPjZWrSrsIEWmL2GmunBaHZ9QWdPxTERr1+Xj4rxjaxaehtwC0qPbDoHwsJFgS2Y5ATHktsyvbe9E/HhuQQXOHQCzR0yoo14g09178mwYBbRo+Im+qz/AGe7Qc4w+HCLCBG9pAGFs1Duy5pbe0EbsdTr1S3GYx1WWtNFwuflxc/Maji4k5suPZtc7xhmbODy1+sS5xk6K7Wc86tkfqnyjiqB2OxqMecEAAyAeV4i3BZsanI3YnAEh5JdAlrzTJtq17QHAc78wirdq0ZgOfMTu0nNrTIsGugAk9VUoUXhpJpt96LSDGtjAsTz1S9iAa5oLKbq4BdJDWOdFgWuPwb4OZGixy8ZNrc8rcijX9p9mJ/3NpGLOpMnmLVfsj2P2s2cfM7aejadI/8As95Pko2pm0OcG7RSLaQPwu3mhzZz/qU4Bk/3B0LPftOzMO5VpVHsPyuNQFwnVrmgNcOR8lz/AK1vx5T7n+mzV9tNnbB9xXg6l1MT4NIXP9utnI+HZqs86rfpTWbV7CpVWb1AuqMB5ggx+qQGt6kpWxdn7EBu1XVqFSTD3MFWmdMWtzE9YV48PbOc/Vxcb7YVDZuziNLk/Qeiez2pc0/6tNoGu6+SP+pWbtvZIEA1y5rjDS3eG8bfCGAfNcWJ6SrPYXYDHEb9GWC+887pN4jdaeXJV8PpScv/AE9Y2s10QRJAcL3IIkGMwoc+4UsosY2GsDWxENHDqZKrv2iBN8rMHLPpc3Eh5+KIsh2YPJ3nHoPumMMux3rXQlDTZngmFoRhsCyB1MkWsoBwLlT3hc5gNiEX9KFrAqvr3AkyVFEEmQcWhSdkkzMEa6eCeKZFpEkefRRBBzKaHRlK90bxNvBGGkxIViGakC5RUXNImZSns104KaNIxIELN6Jr3cLpW6Z3idF0EW8U7dmLLK7RSi/EriLXRBt4CZuEotJdOmVLgcc08UymbPsjnmGiTm2fAK3UrOmN1EzZzGbLS2bssOID3hnMkD1K0H9mUaQJc6RaCLzyTPjtXljzRouWR2z7LCqPeU3BtYa/pf8A4vH1Xo+0azSR7oAQL72vgi2XamuywtxiD10amcbx9UWy+3yDbNlcxxY9pY9mWnImPEXyOISGsuvqftV2VT2kAstUaPhc6L/4mJO6fL1+aO2YgljgWvaYLTou/HlK4cuOLXZtctIuQJyND9F6/Zu2AfhqxJIhxEg28l4OY4wrWz7a5sDS2deK0Zyx7l1QQ8uDSBcbtyRafuq1WoCXU/8AbaWjdeMgxgxnUdy87s/aT2fLYcdMq/S2jfbD7MyCCDBH7Bc+Urtw5cR7aQ2kWBz3wQHkyHi9i3kkv7Qq7PTa54a9+8N0kAhzANQRnTj4Ao//AOjRIMNm4BLiTPO0RxS63bo3fdva2o2DZ4g/+Yv4yuPL4+Wenfj8vHcL2upSqt9+3Z6ZbMVAGlrmE3HyOAc08cjWUyttlSo3/Rr03sA/2qrGndHWo0/DpM6gThVKXaLWEtpt9zvi4cS5r+U6dVT2nYxUBdT+GoPmpHMRlv8Ac2PzicZ+Wryn0Y/aX7M7fOymi/Etc73Tr4LTMjo7pCeO2KFZv+rRcCLmHFxPMGzj0c7xVXsXtvaKR3J324NOpdsYi8xwXom7DR2iHUqr6Dv1UgBfmx1rcjP0TeqzvTF2FxY4/wBLtAcDANKod0xeImPiE2jHFG3adqY0yKlENuHH/bPJwNpzdvgvSt9nKDh8bXVDxfAPcWgecpTvZjZo+R0ZI33RbiJV5MeUN7O299XZ2vLIdcRoSDEjkfyUTO0IaN4QZg9dFoFzQA0ANEAAIXbODIIypztDSqAo2w4WOELNmYLgX4T6pFDaGgloAtwSmh7glrnDDbnkq7mk3DrKW1oJFwCBJmx4Cy5mDGJRP2rn0EWNkd1xdAUCsOK3OQxFGBz6JVVoFwmlhOLJTKDgcjvXOVvHMqk/Kj9//dOeCcByUmQIm3GEXkZAb40lNpO3sWRj5YPdqq76ZkbpIt1We61sMfTgmTEZRlwlUNtDwAGnP6tQeit7Mx24N4AnVakudsXN6NpOaSWjKgEjCBtMgzjjdNMnM+qzYtqJcW56rhuxFyVw4XKOpSO7EQoFsa4OJBsiYWnJlQypAjdkpjLiYTeVwY4BpnMDTKDfJgYA7k1h3c50XVGRp4LHbWAqxINh3/RYnbns+Np+Jh3awFnEWcB+l0eR0W0+1+WIR+/dujdt1WuNs9CyWPlG2tqUX+7rMLXeR5g4cOnFV6j2ie4+Xovqu2bIysNys0PB4i08RqDzC+ee1Xs0dmAqMcSwmCDluYvqF6eHyb1XHlwztl09sAETgqzsXaF7G15HKIxqsnhvDPmm06DCMOHU/VdWIt1tqdugttyjzSKvaLniHRbWBPfGVbodnMyTNjaZ4o3dnMaWuAJAIJAMki0gTg5ys5Pt0lv0o0i6zWguLjAZEyeQzK9v7P8As49oD9oN/wBFNuWc9/M8gfsN7sfszZqTA6i0fEJ3zdxBvc57ldeSRmx8Vx5ct6dJs+1d2ysgzTaebgJ8UVDYmC7WNbHAQfFWo/Cod+XWJPwbypFgY8FwGT/KKva4vy1QXLZgjr5rWBHOO9c09JShVlwAk2vawT3gNGpvgZPJWJV2quKbC50QJM9FX7EpE0994gvcXCbQ0/L5J+29nOqbrS7dp6tyXcieCuMY1oFoAt0C1nQLfSMQI77qhT2d7ZG8AN6bSbcOS0qtQCb4ylSI3ptxOEIssnJld/Sp5iN4Qkh3M+JRdJjTwlTucTfRLHfz7uqJ1V0kQIg3kei5yRrRRxPkijiJSg8jS0WIylt7QpkWfOhHDrwKZxWrTnkkC/5nKhxnu/MpbTMTZpHG/JHpYYzKFaNgFrz+yMuvwSg4YkSJROgibLN5GQRA5FMDoAkpLXjlC51Zk3mM8EeV9HDDVOlua5jx1Sq9TlbQcVFJ+sieEhVti6NqPA0QM2mTuiJQvqBxnXxS30YuD8XHh3BM/bNWhpN4ycIW1gbRjCrbMHQZLnXzj+UYpxa19Lfyt7GTQTwvzTKpERZKqVIgAXOLcL34JryIk+t/4RunoDXknhzx6qv2jsQ2hj6b8ER0Oju437k47RTcIN54YtzVnZnAC7Y4QZJTbh8dfFtuoOY97HzvNcWnhYwfFez9guz2Ci6q4AlxIAIBhosY6mZ6BXvaD2aO0V9+mwyQN+ItEDePKIn/AIrd7F7O9xRZScbskE6Ekku8125c5eLlx4WVmVvZ7Z3w73e4T/YS2eoFvJUXezcO+Bz4t8zZ8xHovWSBby56Jbq3KeYwszlY1hmw06Lmik0Cm9ggAmQe/XOcrnUHMs5vT81Q7sgAjPlw5jqtPYdq3huPG8WifiiHDBvoR9VjuVr2x6l7H1UhgxhM2hoLiABE4niJuo3DeFoAptaOPmjDuATItz1Sukj84JRdSSLWNrxfzRb2kdVDoImY9bqXPGJ8Uakb0IHRNz4oX7TwEi82vbRQ97TYgXyCPuryRroKW6lOfBLNRrbSOAyVzXy0nHd6K1GboI6aLgBySXF1wLxzhLBPA+DkpZdJB3SO/ooJBGLj5jPh08UYMaW1HJRuk2EDmuOd9t45zTEfmEkUGyTDbxNvC6tNpNySf38VzHAG0+HnlXkPEs0QYBEeVx3o3UGzPEQfzVWTWEYQOrE2jOmVeSxX/pgRulkiIzaBxSxsjIAAbA8vNWa7i74QIsP3OVO6ALz6+fFMqxT2j3RsQInOAO9Mp1GkwN0aWxyU1KDHwIkcM8hnmqLuyg10teZwMWg3ELfQaIDSYIE+PgpbslJpMMzY+sqaJc4Rdpi5I1GSrTQ2JBTmjSKTmhsDdEeS6lXggAddPCF1VrD8JIG9IjiUNOgKbYbcenSyzeJlRUqFxMtJFsqttFZwe0MaL2Pdcei0qLJuMaiCOi6rQABG9ErEs3trshtAl1yB8IsMoa9OQBO7x6wjFADDhfNvW/0UilcQ7yufzotcbJ6FlVTsg420GitU6rQ3I7lLaYvczN4gW6JrKYi+vG6OQO7K2we+YDPxHcwf1CM6DCT2m4U6jmuB+accfi+qbsNMmq2M7wNrRcSrnb9EOq7+Ddp6jX1WZ3cP08+Npl3wzF5TKdSQZjiOJ1Tq2zAum0xE2mOvekP2BrsgGNcemRywugcNspgTaxyNJVrs6oKhdE2Y69xe2nRVz2ezOpzhX+zWNYyoRfA8A4/ZFzDGeaxLnCcOPgLRywiqVnxLWgngTCW5xERu4i5ydYOiJkyInHOPsiXoCe93GLoRTJySfLwhS6nxJvJRFw/u/ZVqD7kan1/J580txHGfHXEI3ERMm/pogJB7pMYTKC/6kTHdb8shNScDvjHfqml8WAIGt9ePope6BJH19Fn2iGMIEmTi31TXumPhm/0jVSHfg6aoqhEczbySQtEj6cddUAAFrrqhgX/O9UyDz8P3TOQtjTcOEA8bX8ELKpEnEeneheyDJcIi8n9/ommm08zGZ7vBYvJvC3EEy4yD6jSRlGQcWE6D8ypp090R/KNrQeP2RVHMo8oHkhcQBc9/BNiCBnGf3SdrewRMHkft9UTDhhfERBBzAVZrCXAudMYaBZWaTWu+VwDeF/wKKh3TgHGJPkVaEClMEi4u2CfIhQzYWAyN6TJvJv4WT2kxOOov+yIvJGef4e5M5Ep7CYG6ADfmLaRqmUqYbYQYtjGuiljIB1/ZC5jjMSO4fX7InICa8j+3xuiJOJJ81Vp7wdBBPMRjnifso2l5AI3o4GJd4A3Wrg1YbtWkj0UOqNsTHfa6of1wLmzMgQXEQTwuc2m4lWWExO8DOImYJ5cOKrLBp7awPQ4zNuSGpXaHACZ4Drnkgc0f5OOYAPBBVqvAENA0+IwfLW+qoqtuadSQjpNLjutBcTgBd2f2ZtFYhzi2nTGXZJ/4juzYJ3aftBS2cGns4Bf+p2YPMjJ5ei1ONq3FnanDZGbznD3hEAZ3ZwABdzjwAWf2ZTNRxdWqhhiGtsDcySfizOeCwG7a/e945+86bl0WBzHAdO+U7a61Jx3vikT8ot52P8rc4ZWfONTaxuuLSQ4ceuLcPslU2gCAe4Y+5Wa7bGghzQ5zib3iBy4jOQq1btF7rQAZF/0xrb9U/nJ/jtq842QTwm2bXVxlT/Qn+7eI8mjTqvKv2p5BgiZF7/kr0O3NP9NTAsfdtPCJM68yfBY5cLPZ48t0ptU2wBF/GLWv1UOrHBzy+6wvf1MB8AGPmAJ6cRnCSa9S/wAXH9R43tZdP46x5t/+okwOHC/Cx4z1TNyAd53OLADp6yvKbJ7/AH594AzQXJ75srg2mrPznMwb3PDgq/Fb9nzjYpC8fEeciLfyhNV+8WljY/uuRbiFnt2muYuYF7NmbeOVNRtczAef/Uc0X4/2vJrHnA/cfsUum4ERvSeNif3VPZtidYv3eJEz429FeZSaDaBrYDjGUWSH2W+kZkGRz/OKMN1IHjryXGJJ8YN/L8soJBJnnme++qphNc2desBB/T9VxcQbT9ypvz8AnILpFOg4m88QdMR68FZZRdNxw+v5+XltYGxdumM5gcYC5u0gAAnMa+h18eC89roZUpkeEXMDqjBETMWwNfFLe8Ew0FxGQLxa0yoozeBHKLgxxlHsopwSIB4EFF7oB5Dmk4+Kxm2OM2Gmqgl2gM2z65sg95UMENGcgggjmZsT3rXeM45mJYwEGTo2STwi/Xmnmk8tGGnlB68ilVnPuRuidCecC4GLDRSaLsTJjBkC40kSixLskC4gDx/OirQC/MnAH5okUaDhcuxpLnC3Ekcbp76ZneaWjW4JnjABCLCB7M/GAQLfW+PJJpiHaGYBAkeJBhMewDLpNid2Gg8uP2TG0442/wAj58UySCxBo/47jOg0PMJe0MJkD/1Jx0BkTrdXA6Bu8eC5rHkwA4jSxV2MUD2dvfMcYOCIxxnqZVgMDIAveIuSOZ5K5U7MrxIY0YAD3lgMm8uNxbQBWaGw0GgF77xdrDvDxi3ot5b7TM3zyJPAG3cVu7B2TTYPe7QQd28Ejdba881n9odvbPs4IpsBdgQQ98xiRIB6X5LL2Xt7a6m9/p023BDX3AAEwbGT4ZV1DGp2x2w+t8LCWM/xHxkf/n1WCeyA2Q0wTx48yFt0u1tomH09nI5U455m6XW2svBDaNMOizt5wHhH1TOV32rJfbEdsLgblvCZFhEzJj8Kh9P+0h0D9AJv1EjzWlR3miAylvY3nAuIzeLA4x5ozV2hoP8AqM5btFjRrxJ+i3/JjF4xjv2d26SYB0BPK103Y+yPexuvMxLhuEgHh8OfqtgbTVwHm2sN4dIXP2uq676pif8AFoA0kxmyP5uXqHwio32WeSAalNon9UtPLmrXb2306TWNfG+W7m6byGxJgXjlzVPeaTLQXSLOqE7rScEMPzR0AVAdiM9979znPedSZAtmEeW/9jmeiGVdndctFPQfFYjjuuPom0vdAEtIrDXcBtxkb1zyHgtSls7QNfHQI20bm+Y4ceS1OVGRVOzU7/CMc4/lG5rQJgAdE6oJt8RIEXx+TdAyhFzc45DSyO/tCA0xwH5zQ0mgTAJjnee/K4ZNuCnGPDphMTmvmLZF+X7pIvZuL6cI1OevJOA49x7kLqnK3h4QrUinRaCYyfE9eKY5gtIEiIP2QmrytxBx1MoHOvJNueVaKJ4uLE9/ipn/ACPglb8y2fNRuHiPFa8lqKezDIOdbHXgrG6BpJ4nT7Jf6e4egTKmnU+i443aH+qOjTkWyM5sU0tJzjgR+6XTz3/VNr/K7ofqtTjKJyrngN1HoPUfgSK1QnDmxIgYxcmyja8H/kq3Zvyt/wCH2Wd1bV4mGy4iYJLiLAd5tEKOznhzQbQSbnrExExqubp3eitbTln5oUfTQX0mzNicY8Ri8IffMJjeGsAXH5oq204PWp6rM2fB6H0RitbzPHhgfz+yH3sGzTaII8sIdjwOp/8ApHsmXLWDdPdttQ3NR4nmRHT+VFTan7sGq8/93fdA/Hj6lIPzj/r6o2q9IGyzvAzDsy4km3FxJA5IXbACIPxiIAfcARMNbEQPHmnuye71TnY7vut/QIpbO1sN3QLHAEDuTd3UY80Tsn80Qv0/NArpOdci+AdeOAuFORy6nn5Lm/f1CF/0H0TAMstkE+ClwGul8pVHHefqjbkq6SRTnXx9El+x7zt4kwAIbpNxJ5wSrFNcc9yYlWuw6AjnInGnDVEydYB0GsBds/1P/wBuVjbvmZ/xKbMRRaNVHcUbtOp9CirarJJ9cfyBjqhdryQbRjv+yZq780CcRbrkQDzt+RlLeY4CI7oGbpzvld3qgc/+Po9FnWpYe1sXMAjN/opqcgIj8smU/m/6t9Shp/M7qPQpnbJdGkBJGeMEDj05KbdfySjdk9PqEFXHh9Up1NgzYjQ8bean3bfwp2z6dPsqz8nqmh//2Q==" class="card-img-top" alt="นกอีลุ้ม" loading="lazy">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-feather"></i> นกอีลุ้ม</h5>
+                  <p class="text-muted">นกปากซ่อมปีกฟ้าที่ชอบเกาะตามชายฝั่ง ใช้ปากยาวจับปลาและกุ้งตัวเล็กเหนือผิวน้ำ</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal9">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/29378241/pexels-photo-29378241.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-dragon"></i> งูเหลือม</h5>
+                  <p class="text-muted">งูเหลือมเป็นงูขนาดใหญ่ไม่มีพิษที่พบได้ในภาคใต้ของไทย โดยเฉพาะป่าดิบชื้น ป่าชายเลน และทุ่งนา ลักษณะเด่นคือร่างกายยาวมาก ลวดลายสีสลับตามลำตัวช่วยพรางตัวในธรรมชาติ</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal10">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="card h-100">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-turtle"></i> เต่าหญ้า</h5>
+                  <p class="text-muted">เต่าหญ้าเป็นเต่าทะเลขนาดเล็กถึงกลางที่พบในชายหาดฝั่งอันดามันและอ่าวไทยของภาคใต้ เช่น พังงา ตรัง และกระบี่ มีบทบาทสำคัญในการรักษาสมดุลของระบบนิเวศทางทะเล</p> 
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal11">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-feather-pointed"></i> นกปรอดหัวสีทอง</h5>
+                  <p class="text-muted">นกปรอดหัวสีทองเป็นนกขนาดเล็กที่พบในทุ่งหญ้าและพื้นที่เกษตรกรรมบางส่วนของภาคใต้ หัวสีทองสดใสและเสียงร้องไพเราะเป็นเอกลักษณ์</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal12">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://www.verdantplanet.org/animalfiles/uploads/2021/media-604-616e3644c5acd.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-monkey"></i> ลิงแสม</h5>
+                  <p class="text-muted">ลิงแสมเป็นลิงขนาดกลางที่พบได้ในป่าชายเลน ป่าชายฝั่ง และเกาะต่าง ๆ ของภาคใต้ มีบทบาทสำคัญในการกระจายเมล็ดพืช</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal13">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-T465x-TAsrq1DXXElQmAHw8OmVba-pKmHQ&s" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-turtle"></i> เต่าตนุ</h5>
+                  <p class="text-muted">เต่าตนุเป็นเต่าทะเลขนาดกลางที่พบในชายหาดและทะเลชายฝั่งภาคใต้ เช่น เกาะสมุย เกาะพะงัน และแนวปะการังฝั่งอันดามัน</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal14">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://www.shutterstock.com/shutterstock/videos/16205242/thumb/1.jpg?ip=x480" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-otter"></i> เม่นเอเชีย</h5>
+                  <p class="text-muted">เม่นเอเชียเป็นสัตว์เลี้ยงลูกด้วยนมขนาดกลางที่พบในป่าดิบชื้นและทุ่งหญ้าของภาคใต้ มีหนามแข็งยาวทั่วลำตัวใช้ป้องกันตัวจากศัตรู</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal15">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/7710414/pexels-photo-7710414.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-deer"></i> เก้ง</h5>
+                  <p class="text-muted">เก้งเป็นสัตว์กีบขนาดเล็กถึงกลางที่พบได้ในป่าดิบชื้นและป่าดิบเขาของภาคใต้ มีเสียงร้องคล้ายเห่าเมื่อมีภัยใกล้ตัว</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal16">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://www.verdantplanet.org/animalfiles/uploads/2022/media-381-63a3b66eb7a43.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-cat"></i> แมวดาว</h5>
+                  <p class="text-muted">แมวดาวเป็นแมวป่าขนาดเล็กที่พบได้ในป่าดิบชื้น ป่าดิบเขา และป่าชายเลนของภาคใต้ มีลายจุดคล้ายดาวตามลำตัวช่วยพรางตัวในธรรมชาติ</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal17">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/23914453/pexels-photo-23914453.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-bear"></i> หมีควาย</h5>
+                  <p class="text-muted">หมีควายมีขนสีดำเข้มและมีเครื่องหมายสีขาวบริเวณหน้าอกคล้ายรูปตัว V เป็นสัตว์ขนาดใหญ่ที่แข็งแรงมาก</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal18">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/34234776/pexels-photo-34234776.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-bear"></i> หมีหมา</h5>
+                  <p class="text-muted">หมีหมาเป็นหมีขนาดเล็กที่สุดในโลก มีขนสีดำหรือดำปนน้ำตาล หน้าออกสีอ่อนคล้ายสวมหน้ากาก เป็นสัตว์หากินกลางคืนและปีนต้นไม้เก่งมาก</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal19">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/1642068/pexels-photo-1642068.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-paw"></i> เสือดาว</h5>
+                  <p class="text-muted">เสือดาวเป็นนักล่าที่ว่องไวมาก มีลายจุดสีดำทั่วตัว ชอบซ่อนตัวและล่าเหยื่อแบบเงียบ ๆ</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal20">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+           
+
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/34215171/pexels-photo-34215171.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-dove"></i> นกเงือก</h5>
+                  <p class="text-muted">นกเงือกเป็นนกที่มีเอกลักษณ์ของป่าเมืองไทย ด้วยจะงอยปากขนาดใหญ่และโหนกเหนือปากที่โดดเด่น</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal21">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+         
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <img src="https://www.verdantplanet.org/animalfiles/uploads/2023/media-596-65466775773ef.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-dog"></i> อีเห็นลายเมฆ</h5>
+                  <p class="text-muted">อีเห็นลายเมฆเป็นสัตว์เลี้ยงลูกด้วยนมขนาดกลางที่พบได้ในป่าดิบชื้นและป่าผลัดใบของภาคใต้ มีลายเมฆหรือลายจุดสีอ่อนบนลำตัว</p>
+                  <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#animalModal22">
+                    <i class="fas fa-info-circle"></i> ดูรายละเอียด
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+        </div>
+        </div>
+      </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fas fa-envelope"></i> ติดต่อเรา</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-user"></i> ชื่อ-นามสกุล</label>
+                            <input type="text" class="form-control" required placeholder="กรุณากรอกชื่อ-นามสกุลของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-envelope"></i> อีเมล</label>
+                            <input type="email" class="form-control" required placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-phone"></i> เบอร์โทรศัพท์ (ไม่บังคับ)</label>
+                            <input type="tel" class="form-control" placeholder="08X-XXX-XXXX">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-comment"></i> ข้อความ</label>
+                            <textarea class="form-control" rows="6" required placeholder="กรุณากรอกข้อความของคุณ"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> ยกเลิก
+                    </button>
+                    <button type="submit" form="contactForm" class="btn btn-success">
+                        <i class="fas fa-paper-plane"></i> ส่งข้อความ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3" data-aos="fade-up">
+                    <h5><i class="fas fa-paw"></i> เกี่ยวกับเรา</h5>
+                    <p>DekInw มุ่งมั่นในการเผยแพร่ความรู้เกี่ยวกับสัตว์ป่าไทย และส่งเสริมการอนุรักษ์ธรรมชาติ</p>
+                </div>
+                <div class="col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <h5><i class="fas fa-envelope"></i> ติดต่อเรา</h5>
+                    <p><i class="fas fa-phone"></i> 02-XXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@dekinw.com</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="social-links mb-3">
+                <a href="https://facebook.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="btn btn-light btn-lg mx-2 rounded-circle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="mb-0"><i class="fas fa-copyright"></i> 2025 Animal By DekInw</p>
+        </div>
+    </footer>
+
+      <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+
+      <!-- Animal Modals -->
+      <!-- Modal 1: เต่าทะเล -->
+      <div class="modal fade" id="animalModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-turtle"></i> เต่าทะเล</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg" class="img-fluid mb-3" alt="เต่าทะเล">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>เต่าทะเลเป็นสัตว์เลื้อยคลานที่อาศัยอยู่ตามชายฝั่งและในทะเลลึกของภาคใต้ จุดเด่นของเต่าทะเลคือกระดองแข็งรูปทรงโค้งมน และครีบหน้าที่ยาวคล้ายปีก ทำให้ว่ายน้ำได้คล่องตัว</p>
+              
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารของมันได้แก่แมงกะพรุน สาหร่าย และสัตว์น้ำตัวเล็ก จึงมีบทบาทสำคัญต่อสมดุลของระบบนิเวศ</p>
+              
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แม้ไม่เป็นอันตรายต่อคน แต่เต่าทะเลกำลังเผชิญปัญหาจากขยะทะเล การติดอวน และแหล่งวางไข่ที่ลดลง ทำให้บางชนิดพบได้น้อยลงและต้องได้รับการอนุรักษ์อย่างเร่งด่วน</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2: นกกระปูดใหญ่ -->
+      <div class="modal fade" id="animalModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-kiwi-bird"></i> นกกระปูดใหญ่</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg" class="img-fluid mb-3" alt="นกกระปูดใหญ่">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>นกกระปูดใหญ่เป็นนกขนาดใหญ่ที่โดดเด่นด้วยปากยาวโค้งงอ มักพบอาศัยในป่าชายเลนและพื้นที่ชุ่มน้ำ ตัวผู้มีขนสีน้ำตาลเข้ม ส่วนตัวเมียสีอ่อนกว่า ปากยาวช่วยให้เสาะหาเหยื่อได้ลึกในโคลนเลน</p>
+              
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>กินรูหนอน และสัตว์น้ำตัวเล็ก จึงมีบทบาทในการควบคุมประชากรสัตว์เหล่านี้ นกกระปูดใหญ่เป็นสัญลักษณ์ของป่าชายเลนและพื้นที่ชุ่มน้ำทางใต้ ผสานธรรมชาติและสุนทรียะ</p>
+              
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แหล่งอาศัยถูกทำลายและมลพิษจากของเสียอุตสาหกรรม ทำให้จำนวนนกกระปูดใหญ่ลดลง จึงต้องมีมาตรการฟื้นฟูสิ่งแวดล้อมและควบคุมการพัฒนา</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3: ช้างเอเชีย -->
+      <div class="modal fade" id="animalModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-hippo"></i> ช้างเอเชีย</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/3691809/pexels-photo-3691809.jpeg" class="img-fluid mb-3" alt="ช้างเอเชีย">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>ช้างเอเชียเป็นสัตว์เลี้ยงลูกด้วยนมขนาดใหญ่ที่พบได้ตามป่าดิบชื้นและป่าดิบแล้งของภาคใต้ ลักษณะเด่นคือมีหูขนาดเล็กกว่าช้างแอฟริกา งวงแข็งแรง และมีพฤติกรรมอยู่เป็นฝูง นำโดยช้างเพศเมียตัวโตที่สุด</p>
+              
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารของช้างได้แก่ หญ้า พืชใบอ่อน ผลไม้ และเปลือกไม้ ทำให้มีบทบาทสำคัญในการกระจายเมล็ดพืชและเปิดเส้นทางในป่า</p>
+              
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แม้ช้างเอเชียจะไม่ดุร้ายหากไม่ถูกรบกวน แต่ปัจจุบันกำลังเผชิญปัญหาจากการสูญเสียถิ่นอาศัย การบุกรุกพื้นที่ป่า และความขัดแย้งระหว่างคนกับช้าง ส่งผลให้จำนวนลดลงและต้องได้รับการคุ้มครองอย่างจริงจัง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 4: แพนกอลิน -->
+      <div class="modal fade" id="animalModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-otter"></i> แพนกอลิน</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/34270200/pexels-photo-34270200.jpeg" class="img-fluid mb-3" alt="แพนกอลิน">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>แพนกอลินเป็นสัตว์เลี้ยงลูกด้วยนมที่มีเกล็ดแข็งคลุมลำตัว สามารถม้วนตัวเป็นลูกบอลเพื่อป้องกันตัว พบได้ในป่าดิบชื้นและป่าชายฝั่งของภาคใต้ ออกหากินตอนกลางคืนและมีนิสัยค่อนข้างขี้อาย</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารหลักคือมดและปลวก ซึ่งช่วยควบคุมจำนวนแมลงเหล่านี้ในระบบนิเวศ ทำให้แพนกอลินมีบทบาทสำคัญต่อความสมดุลของป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แพนกอลินเป็นสัตว์ที่ถูกล่ามากเพื่อเอาเกล็ดและเนื้อ ทำให้จำนวนลดลงอย่างมาก ถูกจัดเป็นสัตว์ป่าคุ้มครองและใกล้สูญพันธุ์ จำเป็นต้องช่วยกันลดการล่าและค้าสัตว์ป่า</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 5: นกปากซ่อม -->
+      <div class="modal fade" id="animalModal5" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-dove"></i> นกปากซ่อม</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/34627664/pexels-photo-34627664.jpeg" class="img-fluid mb-3" alt="นกปากซ่อม">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>นกปากซ่อมเป็นนกที่มีปากใหญ่โดดเด่น ปากยาวและแข็งแรง เหมาะสำหรับการคีบเหยื่อ อาศัยในป่าดิบชื้นและบริเวณใกล้ลำธารหรือแหล่งน้ำในภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>กินผลไม้ แมลง และสัตว์เล็กบางชนิด มีบทบาทช่วยกระจายเมล็ดพืชและควบคุมประชากรแมลงในป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แม้ยังพบได้ในธรรมชาติ แต่การตัดไม้ทำลายป่าและรบกวนแหล่งอาศัยอาจส่งผลต่อจำนวนของนกปากซ่อม จึงควรรักษาป่าธรรมชาติให้คงความสมบูรณ์</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 6: สมเสร็จ -->
+      <div class="modal fade" id="animalModal6" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-horse"></i> สมเสร็จ</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/26800454/pexels-photo-26800454.jpeg" class="img-fluid mb-3" alt="สมเสร็จ">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>สมเสร็จเป็นสัตว์เลี้ยงลูกด้วยนมขนาดใหญ่ ลำตัวอวบอ้วน ขาสั้น มีลำตัวส่วนหน้าสีดำและส่วนท้ายสีขาว (ในบางชนิด) ชอบอาศัยในป่าดิบชื้นและพื้นที่ชุ่มน้ำ</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>กินใบไม้ ยอดไม้ และผลไม้ สมเสร็จช่วยกระจายเมล็ดพืชและเปิดทางเดินในป่าทำให้พืชชนิดอื่นเติบโตได้</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>สมเสร็จเป็นสัตว์ที่หายาก ถูกคุกคามจากการสูญเสียถิ่นอาศัยและการล่า ถูกจัดเป็นสัตว์ป่าคุ้มครองและต้องได้รับการอนุรักษ์อย่างจริงจัง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 7: กระทิง -->
+      <div class="modal fade" id="animalModal7" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-cow"></i> กระทิง</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/8465213/pexels-photo-8465213.jpeg" class="img-fluid mb-3" alt="กระทิง">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>กระทิงเป็นสัตว์กีบขนาดใหญ่ในตระกูลวัวป่า ตัวสีดำหรือน้ำตาลเข้ม มีกล้ามเนื้อแข็งแรง เขายาวโค้งสวยงาม พบในป่าดิบชื้นและป่าโปร่งของภาคใต้บางพื้นที่</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>กินหญ้า ใบไม้ และพืชพื้นล่างต่าง ๆ ช่วยควบคุมการเจริญเติบโตของพืชและเปิดพื้นที่โล่งให้พืชชนิดอื่นเติบโต</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>กระทิงถูกคุกคามจากการล่าและการบุกรุกป่าเพื่อการเกษตร จึงต้องมีมาตรการคุ้มครองและดูแลพื้นที่อนุรักษ์อย่างใกล้ชิด</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 8: นกอีโก้ง -->
+      <div class="modal fade" id="animalModal8" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-kiwi-bird"></i> นกอีโก้ง</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQZ5xG_BKuu7Pdy3g_IjSU2LXXyCeYea-ogTD3hAOMG02Pe_n1OLv1eErMfjFEtT7HpKXVLVO-ARvSitvxjqsIIPUVjHlFexdtlJR62XFVg&s=10" class="img-fluid mb-3" alt="นกอีโก้ง">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>นกอีโก้งเป็นนกที่มีลำตัวสีเข้ม ขายาว ปากแดงสด นิยมพบตามพื้นที่ชุ่มน้ำและป่าชายเลนของภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>กินปลา กุ้ง ตัวอ่อนแมลง และสัตว์น้ำขนาดเล็ก มีบทบาทในการควบคุมประชากรสัตว์น้ำและแมลงในพื้นที่ชุ่มน้ำ</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>การเปลี่ยนแปลงของพื้นที่ชุ่มน้ำและมลภาวะทางน้ำอาจกระทบต่อแหล่งอาศัยของนกอีโก้ง การอนุรักษ์พื้นที่ชุ่มน้ำจึงมีความสำคัญ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 9: นกอีลุ้ม -->
+      <div class="modal fade" id="animalModal9" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-feather"></i> นกอีลุ้ม</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="data:image/jpeg;base64,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" class="img-fluid mb-3" alt="นกอีลุ้ม">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>นกอีลุ้มเป็นนกปากซ่อมที่มีปีกสีน้ำเงินอมฟ้า ลำตัวเข้ม ชอบเกาะตามกิ่งไม้หรือหินใกล้แหล่งน้ำเพื่อคอยจับปลาและสัตว์น้ำเล็ก ๆ</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารประกอบด้วยปลา กุ้ง และสัตว์น้ำตัวเล็ก มีบทบาทในการควบคุมประชากรสัตว์น้ำในแหล่งน้ำตื้น</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แม้ยังพบได้ในหลายพื้นที่ แต่การเปลี่ยนแปลงของแหล่งน้ำและมลพิษอาจกระทบต่อแหล่งอาศัยของนกอีลุ้ม จึงควรรักษาคุณภาพน้ำและพื้นที่ธรรมชาติรอบแหล่งน้ำ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 10: งูเหลือม -->
+      <div class="modal fade" id="animalModal10" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-dragon"></i> งูเหลือม</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/29378241/pexels-photo-29378241.jpeg" class="img-fluid mb-3" alt="งูเหลือม">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>งูเหลือมเป็นงูขนาดใหญ่ไม่มีพิษที่พบได้ในป่าดิบชื้น ป่าชายเลน และทุ่งนาของภาคใต้ ลำตัวยาว ลวดลายสีน้ำตาลสลับเหลืองช่วยในการพรางตัวตามพื้นใบไม้และกิ่งไม้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารของงูเหลือมได้แก่สัตว์เลี้ยงลูกด้วยนมและนกขนาดเล็กถึงกลาง เช่น หนู กระต่าย และนก ทำให้มีบทบาทสำคัญในการควบคุมประชากรสัตว์เหล่านี้ในธรรมชาติ</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>โดยทั่วไปงูเหลือมไม่ทำร้ายคนหากไม่ถูกรบกวน แต่บางครั้งถูกล่าเพราะความเข้าใจผิดหรือเพื่อเอาหนังและเนื้อ การอนุรักษ์ถิ่นอาศัยและให้ความรู้แก่ชุมชนช่วยลดความขัดแย้งระหว่างคนกับงูเหลือมได้</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 11: เต่าหญ้า -->
+      <div class="modal fade" id="animalModal11" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-turtle"></i> เต่าหญ้า</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/34627664/pexels-photo-34627664.jpeg" class="img-fluid mb-3" alt="เต่าหญ้า">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>เต่าหญ้าเป็นเต่าทะเลขนาดเล็กถึงกลาง กระดองค่อนข้างกลม สีเขียวอมเทา ครีบหน้าที่ยาวช่วยให้ว่ายน้ำได้อย่างคล่องตัวในเขตน้ำตื้นและแนวหญ้าทะเลของภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารของเต่าหญ้าประกอบด้วยหญ้าทะเล สาหร่าย แมงกะพรุน และสัตว์น้ำขนาดเล็ก ช่วยควบคุมประชากรสิ่งมีชีวิตในแนวหญ้าทะเลและรักษาสมดุลของระบบนิเวศทางทะเล</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>ประชากรเต่าหญ้าลดลงจากการติดอวนประมง การเก็บไข่ และการสูญเสียชายหาดวางไข่ จึงต้องมีการคุ้มครองและฟื้นฟูพื้นที่วางไข่อย่างจริงจัง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 12: นกปรอดหัวสีทอง -->
+      <div class="modal fade" id="animalModal12" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-feather-pointed"></i> นกปรอดหัวสีทอง</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="data:image/jpeg;base64,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" class="img-fluid mb-3" alt="นกปรอดหัวสีทอง">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>นกปรอดหัวสีทองเป็นนกขนาดเล็ก หัวสีทองสดใส ลำตัวสีน้ำตาลอมเหลือง มักพบในทุ่งหญ้า ป่ารกร้าง และพื้นที่เกษตรกรรมบางส่วนของภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารของนกปรอดหัวสีทองได้แก่แมลงขนาดเล็ก เช่น ตั๊กแตน ยุง และหนอน ช่วยควบคุมประชากรแมลงในระบบนิเวศ</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แม้จะพบได้ทั่วไปในบางพื้นที่ แต่การเปลี่ยนแปลงพื้นที่เกษตรกรรมและการทำลายทุ่งหญ้าอาจกระทบต่อแหล่งอาศัยของนกชนิดนี้ จำเป็นต้องรักษาพื้นที่เปิดโล่งและแหล่งธรรมชาติไว้</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 13: ลิงแสม -->
+      <div class="modal fade" id="animalModal13" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-monkey"></i> ลิงแสม</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://www.verdantplanet.org/animalfiles/uploads/2021/media-604-616e3644c5acd.jpg" class="img-fluid mb-3" alt="ลิงแสม">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>ลิงแสมเป็นลิงขนาดกลาง ตัวสีน้ำตาลเทา หน้าสีชมพูถึงเทาอ่อน หางยาว พบได้ตามป่าชายเลน ป่าชายฝั่ง เกาะ และพื้นที่ใกล้ชุมชนในภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารได้แก่ผลไม้ ใบไม้ เมล็ดพืช และแมลง ลิงแสมมีบทบาทสำคัญในการกระจายเมล็ดพืชและช่วยรักษาสมดุลของระบบนิเวศป่าและป่าชายเลน</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>ประชากรลิงแสบางพื้นที่ลดลงจากการทำลายที่อยู่อาศัยและความขัดแย้งกับคน การจัดการขยะและการไม่ให้อาหารลิงช่วยลดปัญหาความขัดแย้งได้</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 14: เต่าตนุ -->
+      <div class="modal fade" id="animalModal14" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-turtle"></i> เต่าตนุ</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-T465x-TAsrq1DXXElQmAHw8OmVba-pKmHQ&s" class="img-fluid mb-3" alt="เต่าตนุ">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>เต่าตนุเป็นเต่าทะเลขนาดกลาง กระดองสีเขียวถึงน้ำตาลเขียว ครีบหน้ายาว แข็งแรง พบตามชายหาดและทะเลชายฝั่งภาคใต้ทั้งฝั่งอ่าวไทยและอันดามัน</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารหลักคือหญ้าทะเล สาหร่าย และสัตว์น้ำไม่มีกระดูกสันหลังขนาดเล็ก เต่าตนุช่วยรักษาสมดุลของแนวหญ้าทะเลซึ่งเป็นแหล่งอาศัยของสัตว์น้ำหลากหลายชนิด</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>เต่าตนุถูกคุกคามจากการติดเครื่องมือประมง การเก็บไข่ และการเปลี่ยนแปลงชายหาดสำหรับวางไข่ การจำกัดการใช้เครื่องมือประมงที่เป็นอันตรายและการคุ้มครองพื้นที่วางไข่จึงเป็นสิ่งสำคัญ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 15: เม่นเอเชีย -->
+      <div class="modal fade" id="animalModal15" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-otter"></i> เม่นเอเชีย</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://www.shutterstock.com/shutterstock/videos/16205242/thumb/1.jpg?ip=x480" class="img-fluid mb-3" alt="เม่นเอเชีย">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>เม่นเอเชียเป็นสัตว์เลี้ยงลูกด้วยนมขนาดกลาง มีหนามแข็งยาวทั่วลำตัว ใช้ป้องกันตัวจากศัตรู พบได้ในป่าดิบชื้น ป่าเบญจพรรณ และทุ่งหญ้าบางแห่งของภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารได้แก่ผลไม้ รากไม้ เมล็ดพืช และแมลงขนาดเล็ก เม่นเอเชียช่วยกระจายเมล็ดพืชและควบคุมประชากรแมลงในระบบนิเวศป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>เม่นเอเชียถูกคุกคามจากการล่าและการทำลายป่า การรักษาป่าธรรมชาติและลดการล่าสัตว์เป็นปัจจัยสำคัญในการคงอยู่ของเม่นเอเชียในธรรมชาติ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 16: เก้ง -->
+      <div class="modal fade" id="animalModal16" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-deer"></i> เก้ง</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/7710414/pexels-photo-7710414.jpeg" class="img-fluid mb-3" alt="เก้ง">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>เก้งเป็นสัตว์กีบขนาดเล็กถึงกลาง ตัวสีน้ำตาลแดง หางสั้น เขาสั้นงุ้มเฉพาะเพศผู้ มีนิสัยระมัดระวังและส่งเสียงคล้ายเห่าเมื่อรู้สึกถึงอันตราย</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารประกอบด้วยใบไม้ ผลไม้ และยอดไม้ เก้งช่วยกระจายเมล็ดพืชและรักษาสมดุลของพืชในป่าธรรมชาติ</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>เก้งถูกคุกคามจากการล่าเพื่อเนื้อและการทำลายป่า การคุ้มครองพื้นที่ป่าและลดการล่าสัตว์เป็นหัวใจสำคัญในการอนุรักษ์เก้งในภาคใต้</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 17: แมวดาว -->
+      <div class="modal fade" id="animalModal17" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-cat"></i> แมวดาว</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://www.verdantplanet.org/animalfiles/uploads/2022/media-381-63a3b66eb7a43.jpg" class="img-fluid mb-3" alt="แมวดาว">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>แมวดาวเป็นแมวป่าขนาดเล็ก มีลายจุดคล้ายดาวตามลำตัว หางยาว ช่วยในการทรงตัวและพรางตัว มักอาศัยในป่าดิบชื้น ป่าดิบเขา และป่าชายเลนของภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารได้แก่หนู กระรอก นกขนาดเล็ก และสัตว์เลื้อยคลานตัวเล็ก แมวดาวมีบทบาทสำคัญในการควบคุมประชากรสัตว์ขนาดเล็กในระบบนิเวศป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>แมวดาวถูกคุกคามจากการล่าและการทำลายที่อยู่อาศัย การอนุรักษ์พื้นที่ป่าและลดการล่าสัตว์มีความสำคัญต่อการอยู่รอดของแมวดาวในธรรมชาติ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 18: หมีควาย -->
+      <div class="modal fade" id="animalModal18" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-bear"></i> หมีควาย</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/23914453/pexels-photo-23914453.jpeg" class="img-fluid mb-3" alt="หมีควาย">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>หมีควายมีขนสีดำเข้ม มีเครื่องหมายสีขาวบริเวณหน้าอกคล้ายรูปตัว V เป็นสัตว์เลี้ยงลูกด้วยนมขนาดใหญ่ แข็งแรง และปีนต้นไม้ได้ดี</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารส่วนใหญ่เป็นผลไม้ป่า น้ำผึ้ง แมลง และสัตว์เล็กบางชนิด หมีควายช่วยกระจายเมล็ดพืชและรักษาสมดุลของระบบนิเวศป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>จำนวนหมีควายลดลงจากการล่าและการสูญเสียพื้นที่ป่า ทำให้ถูกจัดเป็นสัตว์ป่าคุ้มครอง การฟื้นฟูป่าและลดการล่าสัตว์เป็นมาตรการสำคัญในการอนุรักษ์หมีควาย</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 19: หมีหมา -->
+      <div class="modal fade" id="animalModal19" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-bear"></i> หมีหมา</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/34234776/pexels-photo-34234776.jpeg" class="img-fluid mb-3" alt="หมีหมา">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>หมีหมาเป็นหมีขนาดเล็กที่สุดในโลก มีขนสีดำหรือดำปนน้ำตาล ใบหน้าสีอ่อนคล้ายสวมหน้ากาก เป็นสัตว์หากินกลางคืนและปีนต้นไม้เก่งมาก</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารส่วนใหญ่เป็นผลไม้ แมลง ไข่นก และสัตว์เล็กบางชนิด หมีหมามีบทบาทในการกระจายเมล็ดพืชและควบคุมประชากรแมลงในป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>หมีหมามักถูกคุกคามจากการล่าเพื่อนำไปเป็นสัตว์เลี้ยงและการทำลายป่า จึงจัดเป็นสัตว์ป่าคุ้มครองและต้องการการอนุรักษ์อย่างจริงจัง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 20: เสือดาว -->
+      <div class="modal fade" id="animalModal20" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-paw"></i> เสือดาว</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/1642068/pexels-photo-1642068.jpeg" class="img-fluid mb-3" alt="เสือดาว">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>เสือดาวเป็นนักล่าที่ว่องไว มีลายจุดสีดำทั่วตัว ชอบซ่อนตัวตามพุ่มไม้และก้อนหิน ล่าเหยื่ออย่างเงียบเชียบ สามารถลากเหยื่อขึ้นต้นไม้เพื่อหลบผู้ล่าอื่นได้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารของเสือดาวได้แก่สัตว์ขนาดกลาง เช่น ลิง เก้ง และสัตว์เล็กตามป่า เสือดาวมีบทบาทสำคัญในฐานะผู้ล่าลำดับสูง ช่วยควบคุมประชากรสัตว์กินพืช</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>เสือดาวในประเทศไทยเหลือไม่มาก พบเฉพาะในพื้นที่ป่าที่สมบูรณ์ การอนุรักษ์ป่าขนาดใหญ่และการป้องกันการล่าเป็นหัวใจสำคัญในการคงประชากรเสือดาว</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 21: นกเงือก -->
+      <div class="modal fade" id="animalModal21" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-dove"></i> นกเงือก</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://images.pexels.com/photos/34215171/pexels-photo-34215171.jpeg" class="img-fluid mb-3" alt="นกเงือก">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>นกเงือกเป็นนกขนาดใหญ่ มีจะงอยปากยาวหนาและมีโหนกขนาดใหญ่บนปาก หลายชนิดมีสีสันสวยงาม เป็นเอกลักษณ์ของป่าดิบชื้นในภาคใต้</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารหลักคือผลไม้ป่าและสัตว์เล็กบางชนิด นกเงือกมีบทบาทสำคัญมากในการกระจายเมล็ดไม้ใหญ่ ช่วยให้ป่ายังคงความสมบูรณ์</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>นกเงือกหลายชนิดใกล้สูญพันธุ์จากการตัดไม้ทำลายป่าและการล่า การอนุรักษ์ป่าที่มีไม้ใหญ่และการปกป้องโพรงไม้สำหรับทำรังจึงจำเป็นอย่างยิ่ง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 22: อีเห็นลายเมฆ -->
+      <div class="modal fade" id="animalModal22" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title"><i class="fas fa-dog"></i> อีเห็นลายเมฆ</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="https://www.verdantplanet.org/animalfiles/uploads/2023/media-596-65466775773ef.jpg" class="img-fluid mb-3" alt="อีเห็นลายเมฆ">
+              <h6 class="text-success">ลักษณะทั่วไป</h6>
+              <p>อีเห็นลายเมฆเป็นสัตว์เลี้ยงลูกด้วยนมขนาดกลาง ลำตัวสีน้ำตาลอ่อนถึงเทา มีลายเมฆหรือลายจุดสีอ่อนบนหลังและลำตัว หางยาวช่วยในการทรงตัว มักหากินในเวลากลางคืน</p>
+              <h6 class="text-success">อาหารและบทบาทในระบบนิเวศ</h6>
+              <p>อาหารได้แก่ผลไม้ แมลง ไข่นก และสัตว์ขนาดเล็ก มีบทบาทในการกระจายเมล็ดพืชและควบคุมประชากรสัตว์ขนาดเล็กในป่า</p>
+              <h6 class="text-success">สถานการณ์และการอนุรักษ์</h6>
+              <p>อีเห็นลายเมฆถูกคุกคามจากการทำลายป่าและการล่า การรักษาป่าดิบชื้นและป่าผลัดใบให้คงความสมบูรณ์เป็นสิ่งสำคัญต่อการอนุรักษ์สัตว์ชนิดนี้</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/region.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
